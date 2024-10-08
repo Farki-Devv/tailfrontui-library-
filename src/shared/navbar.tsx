@@ -1,9 +1,10 @@
+
 /**
  * @file navbar.tsx
  * @overview Displays a navbar.
  */
 import { FiGithub } from 'react-icons/fi';
-import { Outlet, useLocation, useNavigate } from 'react-router-dom';
+import { useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '../elements/button';
 import { Input } from '../elements/input';
 import Logo from './logo';
@@ -28,8 +29,9 @@ const navLinks = [
   },
 ];
 function Navbar() {
-  const navigate = useNavigate();
-	const active = useLocation().pathname
+  const router = useNavigate();
+	const location = useLocation()
+  const active = String(location.pathname)
   return (
     <>
       <div className="flex justify-between items-center h-[84px]">
@@ -42,8 +44,8 @@ function Navbar() {
             {navLinks.map((link) => (
               <Button
                 key={link.name}
-                variant={active === link.path ? 'secondary' : 'ghost'}
-                onClick={() => navigate(link.path)}
+                variant={active && active.includes(link.path) ? 'secondary' : 'ghost'}
+                onClick={() => router(link.path)}
               >
                 {link.name}
               </Button>
@@ -55,7 +57,7 @@ function Navbar() {
         {/* Search bar and buttons */}
         <div className="flex gap-2 items-center">
           <div className="relative">
-            <Input placeholder="Type keywords..." className="w-[17.5rem]" />
+            <Input placeholder="Type keywords..." className="w-[17.5rem] pr-[3rem]" />
             <div className="border absolute rounded-lg text-xs px-1 py-0.5 text-type-500 right-3 top-2 border-stroke-200">
               ⌘ K
             </div>
@@ -66,10 +68,6 @@ function Navbar() {
           </Button>
           <Button>Get Started</Button>
         </div>
-      </div>
-			{/* body other elements for example: pages (home , docs, elements, blog) */}
-      <div className="mt-10">
-        <Outlet />
       </div>
     </>
   );

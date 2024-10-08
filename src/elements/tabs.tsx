@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /**
  * @file tabs.tsx
  * @overview A set of layered sections of content—known as tab panels—that are displayed one at a time.
