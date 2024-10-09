@@ -6,6 +6,7 @@ export default {
     extend: {
       fontFamily: {
         inter: ['Inter', 'sans-serif'],
+        code: ['Source Code Pro', 'monospace'],
       },
       keyframes: {
         'accordion-down': {

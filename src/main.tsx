@@ -7,6 +7,8 @@ import './index.css';
 import React from 'react';
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <RouterProvider router={router} />
+    <div className="max-w-[90rem] mx-auto px-[7.5rem]">
+      <RouterProvider router={router} />
+    </div>
   </StrictMode>,
 );

@@ -18,7 +18,7 @@ function Saidbar() {
   return (
     <div>
       <ScrollArea className="">
-        <div className="flex flex-col gap-6 pr-1 h-screen w-[15.375rem] space-y-2">
+        <div className="flex flex-col gap-6 pr-1 h-screen w-[15.375rem] space-y-2 max-md:hidden">
           {/* Saibar Overview */}
           <div className="flex flex-col gap-2">
             <span className="text-type-950 text-base font-inter font-medium">
