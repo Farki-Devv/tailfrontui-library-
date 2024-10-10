@@ -42,7 +42,7 @@ const Code: React.FC<CodeProps> = ({ children, className = '' }) => {
         </div>
 
         {/* Copy button */}
-        <Copy className="size-6 cursor-pointer top-4 right-4 absolute" onClick={copyToClipboard}/>
+        <Copy className="size-4 cursor-pointer top-4 right-4 absolute" onClick={copyToClipboard}/>
       </code>
 
       <div className="flex justify-center">

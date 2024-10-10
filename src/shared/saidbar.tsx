@@ -10,11 +10,10 @@ import {
   saidbarOverviewLinks,
   saidbarThemesLinks,
 } from '../utils';
-import React from 'react';
 function Saidbar() {
   const router = useNavigate();
-	const location = useLocation()
-  const active = String(location.pathname)
+  const location = useLocation();
+  const active = String(location.pathname);
   return (
     <div>
       <ScrollArea className="">
@@ -30,7 +29,7 @@ function Saidbar() {
                   <div
                     key={element.name}
                     onClick={() => router(element.path)}
-                    className={`${active ===element.path ? 'bg-container-100' : ''} text-sm cursor-pointer hover:bg-container-100 px-3 py-2 rounded-lg squircle`}
+                    className={`${active === element.path ? 'bg-container-100' : ''} text-sm cursor-pointer hover:bg-container-100 px-3 py-2 rounded-lg squircle`}
                   >
                     {element.name}
                   </div>
