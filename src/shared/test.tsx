@@ -1,28 +1,15 @@
-import {
-  Accordion,
-  AccordionContent,
-  AccordionItem,
-  AccordionTrigger,
-} from '../components/accordion';
-
+import { Circle } from 'lucide-react';
+import { Alert, AlertDescription, AlertTitle } from '../components/alert';
 function Test() {
   return (
-    <Accordion type="single" collapsible defaultValue="1">
-      <AccordionItem value="1">
-        <AccordionTrigger>Title</AccordionTrigger>
-        <AccordionContent>
-          The leaves danced gently in the breeze, their rustling a symphony of
-          nature’s.
-        </AccordionContent>
-      </AccordionItem>
-      <AccordionItem value="2">
-        <AccordionTrigger>Title</AccordionTrigger>
-        <AccordionContent>
-          The leaves danced gently in the breeze, their rustling a symphony of
-          nature’s.
-        </AccordionContent>
-      </AccordionItem>
-    </Accordion>
+    <Alert className="w-[532px]">
+      <Circle className="h-4 w-4" />
+      <AlertTitle>Title</AlertTitle>
+      <AlertDescription className="text-type-500">
+        The leaves danced gently in the breeze, their rustling a symphony of
+        nature’s.
+      </AlertDescription>
+    </Alert>
   );
 }
 

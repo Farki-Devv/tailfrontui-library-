@@ -5,8 +5,8 @@
 import { FaGithub } from 'react-icons/fa6';
 import { FiGithub } from 'react-icons/fi';
 import { useLocation, useNavigate } from 'react-router-dom';
-import { Button } from '../elements/button';
-import { Input } from '../elements/input';
+import { Button } from '../components/button';
+import { Input } from '../components/input';
 import Logo from './logo';
 import MobileSaidbar from './mobile-saidbar';
 // Navbar elements
@@ -16,8 +16,8 @@ const navLinks = [
     path: '/docs',
   },
   {
-    name: 'Elements',
-    path: '/elements',
+    name: 'Components',
+    path: '/docs/components/accordion',
   },
   {
     name: 'Themes',
@@ -73,7 +73,7 @@ function Navbar() {
               ⌘ K
             </div>
           </div>
-          <div className="grid grid-cols-2 w-full gap-2 items-center max-md:hidden">
+          <div className="grid grid-cols-2 w-full gap-2 items-center max-ld:hidden">
             <Button variant={'outline'} className="tracking-wide">
               <FiGithub className="text-type-500" />
               GitHub

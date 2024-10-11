@@ -1,13 +1,18 @@
 import { Check, Copy } from 'lucide-react';
 import React, { useState } from 'react';
-import { Button } from '../elements/button';
+import { Button } from '../components/button';
 
 interface CodeProps {
   children: string;
   className?: string;
+  codeClassName?: string;
 }
 
-const Code: React.FC<CodeProps> = ({ children, className = '' }) => {
+const Code: React.FC<CodeProps> = ({
+  children,
+  className = '',
+  codeClassName,
+}) => {
   const [isExpanded, setIsExpanded] = useState(false);
   const [copied, setCopied] = useState(false); // new state for copy status
 
@@ -45,7 +50,9 @@ const Code: React.FC<CodeProps> = ({ children, className = '' }) => {
         } transition-all  `}
       >
         {/* children */}
-        <div className="w-[94%] whitespace-pre-line font-normal text-sm  md:text-base font-code">
+        <div
+          className={`w-[94%] whitespace-pre-line font-normal text-sm  md:text-base font-code ${codeClassName}`}
+        >
           {children}
         </div>
 

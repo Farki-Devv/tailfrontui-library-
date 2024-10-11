@@ -38,15 +38,13 @@ function MobileSaidbar() {
                 </span>
                 <div>
                   {saidbarOverviewLinks.map((element) => (
-                    <>
-                      <div
-                        key={element.name}
-                        onClick={() => router(element.path)}
-                        className={`${active === element.path ? 'bg-container-100' : ''} text-sm cursor-pointer hover:bg-container-100 px-3 py-2 rounded-lg squircle`}
-                      >
-                        {element.name}
-                      </div>
-                    </>
+                    <div
+                      key={element.name}
+                      onClick={() => router(element.path)}
+                      className={`${active === element.path ? 'bg-container-100' : ''} text-sm cursor-pointer hover:bg-container-100 px-3 py-2 rounded-lg squircle`}
+                    >
+                      {element.name}
+                    </div>
                   ))}
                 </div>
               </div>
@@ -58,15 +56,13 @@ function MobileSaidbar() {
                 </span>
                 <div>
                   {saidbarThemesLinks.map((element) => (
-                    <>
-                      <div
-                        key={element.name}
-                        onClick={() => router(element.path)}
-                        className={`${active && active.includes(element.path) ? 'bg-container-100' : ''} text-sm cursor-pointer hover:bg-container-100 px-3 py-2 rounded-lg squircle`}
-                      >
-                        {element.name}
-                      </div>
-                    </>
+                    <div
+                      key={element.name}
+                      onClick={() => router(element.path)}
+                      className={`${active && active.includes(element.path) ? 'bg-container-100' : ''} text-sm cursor-pointer hover:bg-container-100 px-3 py-2 rounded-lg squircle`}
+                    >
+                      {element.name}
+                    </div>
                   ))}
                 </div>
               </div>
@@ -78,15 +74,13 @@ function MobileSaidbar() {
                 </span>
                 <div>
                   {saidbarElementsLinks.map((element) => (
-                    <>
-                      <div
-                        key={element.name}
-                        onClick={() => router(element.path)}
-                        className={`${active && active.includes(element.path) ? 'bg-container-100' : ''} text-sm cursor-pointer hover:bg-container-100 px-3 py-2 rounded-lg squircle`}
-                      >
-                        {element.name}
-                      </div>
-                    </>
+                    <div
+                      key={element.name}
+                      onClick={() => router(element.path)}
+                      className={`${active && active.includes(element.path) ? 'bg-container-100' : ''} text-sm cursor-pointer hover:bg-container-100 px-3 py-2 rounded-lg squircle`}
+                    >
+                      {element.name}
+                    </div>
                   ))}
                 </div>
               </div>

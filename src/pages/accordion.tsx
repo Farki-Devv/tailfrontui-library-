@@ -95,7 +95,7 @@ function AccordionPage() {
             {
               Property: 'dashed',
               Description:
-                'A vertically stacked set of interactive headings that each reveal a section of content.',
+                'modal that expects response',
               Type: 'string',
               Default: 'true',
               Version: '1',

@@ -11,7 +11,7 @@ import {
 } from '../components/alert-dialog';
 import { Button } from '../components/button';
 import Div from '../components/div';
-import { Tabs, TabsContent, TabsList, TabsTrigger } from '../elements/tabs';
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/tabs';
 import { ElementSteps } from '../shared/element-steps';
 import ElementsBreadcrumb from '../shared/elements-breadcrumb';
 import ElementsContainer from '../shared/elements-container';

@@ -25,7 +25,7 @@ export function NavigationButtons() {
       return `/${path}`;
     }
   };
-
+  
   return (
     <div className="flex justify-between">
       {/* last component */}

@@ -5,7 +5,7 @@ import {
   BreadcrumbLink,
   BreadcrumbList,
   BreadcrumbPage,
-} from '../elements/breadcrumb';
+} from '../components/breadcrumb';
 interface ElementsBreadcrumbProps {
   page: string;
 }
