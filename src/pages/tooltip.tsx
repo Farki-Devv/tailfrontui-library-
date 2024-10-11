@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Tooltip() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Tooltip
+export default Tooltip;

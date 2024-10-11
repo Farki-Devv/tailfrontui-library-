@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Breadcrumb() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Breadcrumb
+export default Breadcrumb;

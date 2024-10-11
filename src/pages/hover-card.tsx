@@ -1,11 +1,5 @@
-import React from 'react'
-
 function HoverCard() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default HoverCard
+export default HoverCard;

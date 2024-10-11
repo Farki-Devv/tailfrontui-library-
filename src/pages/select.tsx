@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Select() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Select
+export default Select;

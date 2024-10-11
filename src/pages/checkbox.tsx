@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Checkbox() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Checkbox
+export default Checkbox;

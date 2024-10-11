@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Resizable() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Resizable
+export default Resizable;

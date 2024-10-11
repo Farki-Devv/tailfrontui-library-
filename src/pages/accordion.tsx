@@ -9,7 +9,6 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/tabs';
 import { ElementSteps } from '../shared/element-steps';
 import ElementsBreadcrumb from '../shared/elements-breadcrumb';
 import ElementsContainer from '../shared/elements-container';
-import ElementsExample from '../shared/elements-example';
 import ElementsExampleTabs from '../shared/elements-example-tabs';
 import { ElementsName } from '../shared/elements-name';
 import ElementsRef from '../shared/elements-ref';
@@ -17,7 +16,13 @@ import { ElementsReference } from '../shared/elements-reference';
 import { ElementsUsage } from '../shared/elements-usage';
 
 import Code from '../utils/code';
-import { accordionCode, accordionSecondStepCode, accordionUsageCode, accordionUsageTwoCode, elementsManualTailwind } from '../utils/element-code'
+import {
+  accordionCode,
+  accordionSecondStepCode,
+  accordionUsageCode,
+  accordionUsageTwoCode,
+  elementsManualTailwind,
+} from '../utils/element-code';
 import { NavigationButtons } from '../utils/pagination';
 import { ExampleProps } from '../utils/type';
 
@@ -31,7 +36,7 @@ function AccordionPage() {
         name="Accordion"
         description="A collection of vertically arranged interactive headers, each of which reveals a piece of content. Check it out by Example"
       >
-        <Example padding='p-[10px]' />
+        <Example padding="p-[10px]" />
       </ElementsName>
       {/* Installation */}
       <Div>

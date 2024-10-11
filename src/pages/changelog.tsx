@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Changelog() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Changelog
+export default Changelog;

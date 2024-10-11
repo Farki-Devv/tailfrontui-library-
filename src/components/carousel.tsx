@@ -44,7 +44,7 @@ import useEmblaCarousel, {
 } from 'embla-carousel-react';
 import * as React from 'react';
 
-import { Button } from '@/components/button';
+import { Button } from '../components/button';
 import { IconArrowLeft, IconArrowRight } from '@tabler/icons-react';
 import clsx from 'clsx';
 import { twMerge } from 'tailwind-merge';

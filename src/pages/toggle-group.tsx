@@ -1,11 +1,5 @@
-import React from 'react'
-
 function ToggleGroup() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default ToggleGroup
+export default ToggleGroup;

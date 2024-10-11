@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Skeleton() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Skeleton
+export default Skeleton;

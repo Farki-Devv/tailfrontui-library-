@@ -1,11 +1,5 @@
-import React from 'react'
-
 function RadioGroup() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default RadioGroup
+export default RadioGroup;

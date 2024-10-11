@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Effects() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Effects
+export default Effects;

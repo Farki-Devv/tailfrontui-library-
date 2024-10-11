@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Badge() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Badge
+export default Badge;

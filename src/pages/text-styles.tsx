@@ -1,11 +1,5 @@
-import React from 'react'
-
 function TextStyles() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default TextStyles
+export default TextStyles;

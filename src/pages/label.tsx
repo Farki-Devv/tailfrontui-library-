@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Label() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Label
+export default Label;

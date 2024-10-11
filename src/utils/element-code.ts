@@ -1,4 +1,3 @@
-
 // Update tailwind.config.js code
 export const elementsManualTailwind = `/** @type {import('tailwindcss').Config} */
 export default {

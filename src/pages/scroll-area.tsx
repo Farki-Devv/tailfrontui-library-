@@ -1,11 +1,5 @@
-import React from 'react'
-
 function ScrollArea() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default ScrollArea
+export default ScrollArea;

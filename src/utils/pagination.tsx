@@ -42,7 +42,7 @@ export function NavigationButtons() {
       {nextLink && (
         <Button
           variant={'outline'}
-          className='ml-auto'
+          className="ml-auto"
           onClick={() => navigate(constructPath(nextLink.path))}
         >
           {nextLink.name}

@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Alert() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Alert
+export default Alert;

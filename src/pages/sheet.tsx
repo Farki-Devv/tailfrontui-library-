@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Sheet() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Sheet
+export default Sheet;

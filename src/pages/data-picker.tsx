@@ -1,11 +1,5 @@
-import React from 'react'
-
 function DataPicker() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default DataPicker
+export default DataPicker;

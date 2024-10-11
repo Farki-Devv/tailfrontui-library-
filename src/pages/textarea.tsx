@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Textarea() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Textarea
+export default Textarea;

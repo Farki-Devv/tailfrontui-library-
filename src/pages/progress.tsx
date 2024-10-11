@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Progress() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Progress
+export default Progress;

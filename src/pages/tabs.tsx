@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Tabs() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Tabs
+export default Tabs;

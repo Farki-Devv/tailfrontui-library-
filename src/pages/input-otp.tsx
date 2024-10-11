@@ -1,11 +1,5 @@
-import React from 'react'
-
 function InputOTP() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default InputOTP
+export default InputOTP;

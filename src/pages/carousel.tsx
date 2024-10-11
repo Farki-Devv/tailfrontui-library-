@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Carousel() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Carousel
+export default Carousel;

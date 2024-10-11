@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Drawer() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Drawer
+export default Drawer;

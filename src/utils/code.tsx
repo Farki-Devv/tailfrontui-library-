@@ -1,4 +1,4 @@
-import { Copy, Check } from 'lucide-react';
+import { Check, Copy } from 'lucide-react';
 import React, { useState } from 'react';
 import { Button } from '../elements/button';
 

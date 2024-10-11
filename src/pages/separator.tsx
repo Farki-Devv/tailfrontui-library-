@@ -1,11 +1,5 @@
-import React from 'react'
-
 function Separator() {
-	return (
-		<div>
-			
-		</div>
-	)
+  return <div></div>;
 }
 
-export default Separator
+export default Separator;
