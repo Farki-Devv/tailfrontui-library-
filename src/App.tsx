@@ -68,7 +68,7 @@ const Layout = () => {
 
         <div>
           {/* Outlet for content */}
-          <div className="mt-10 ml-10">
+          <div className="mt-10 md:ml-10">
             <Outlet />
           </div>
         </div>

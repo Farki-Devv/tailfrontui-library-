@@ -8,7 +8,7 @@ import React from 'react';
 import Footer from './shared/footer.tsx'
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
-    <div className="max-w-[90rem] mx-auto px-[7.5rem]">
+    <div className="max-w-[90rem] mx-auto px-[4px] lg:px-[7.5rem]">
       <RouterProvider router={router} />
     </div>
     <Footer/>

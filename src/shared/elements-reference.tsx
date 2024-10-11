@@ -5,8 +5,7 @@ import {
   TableHead,
   TableHeader,
   TableRow,
-} from "../components/table";
-import React from 'react';
+} from '../components/table';
 
 // ElementReference interfeysi, bitta qator uchun
 interface ElementReference {
@@ -31,20 +30,21 @@ export function ElementsReference(props: { elements: ElementReference[] }) {
         </TableRow>
       </TableHeader>
       <TableBody>
-        {/* Dinamik qatorlarni props orqali chiqarish */}
         {props.elements.map((element, index) => (
           <TableRow key={index} className="font-sm font-normal">
-            <TableCell className="py-3">{element.Property}</TableCell>
-            <TableCell className="py-3">{element.Description}</TableCell>
-            <TableCell className="py-3 text-purple-600">{element.Type}</TableCell>
+            <TableCell className="text-left">{element.Property}</TableCell>
+            <TableCell className="text-left">{element.Description}</TableCell>
+            <TableCell className="text-left text-purple-600">
+              {element.Type}
+            </TableCell>
             <TableCell
-              className={`py-3 ${
+              className={`text-left ${
                 element.Default === 'false' ? 'text-red-600' : 'text-green-600'
               }`}
             >
               {element.Default}
             </TableCell>
-            <TableCell className="text-right py-3">{element.Version}</TableCell>
+            <TableCell className="text-right">{element.Version}</TableCell>
           </TableRow>
         ))}
       </TableBody>

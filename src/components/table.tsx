@@ -88,7 +88,24 @@ const TableRow = React.forwardRef<
     {...props}
   />
 ));
-TableRow.displayName = 'TableRow';
+
+const TableCell = React.forwardRef<
+  HTMLTableCellElement,
+  React.TdHTMLAttributes<HTMLTableCellElement>
+>(({ className, ...props }, ref) => (
+  <td
+    ref={ref}
+    className={twMerge(
+      clsx(
+        'md:px-4 py-3 h-auto font-normal text-type-950', // h-auto qo'shildi
+        className,
+      ),
+    )}
+    {...props}
+  />
+));
+TableCell.displayName = 'TableCell';
+
 
 const TableHead = React.forwardRef<
   HTMLTableCellElement,
@@ -107,22 +124,7 @@ const TableHead = React.forwardRef<
 ));
 TableHead.displayName = 'TableHead';
 
-const TableCell = React.forwardRef<
-  HTMLTableCellElement,
-  React.TdHTMLAttributes<HTMLTableCellElement>
->(({ className, ...props }, ref) => (
-  <td
-    ref={ref}
-    className={twMerge(
-      clsx(
-        'px-4 h-10 aligin-middle font-normal text-type-950 [&:has([role=checkbox])]:pr-0',
-        className,
-      ),
-    )}
-    {...props}
-  />
-));
-TableCell.displayName = 'TableCell';
+
 
 const TableCaption = React.forwardRef<
   HTMLTableCaptionElement,

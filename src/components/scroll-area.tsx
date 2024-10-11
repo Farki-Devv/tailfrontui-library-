@@ -74,7 +74,7 @@ const ScrollArea = React.forwardRef<
     ref={ref}
     className={twMerge(
       clsx(
-        'relative overflow-hidden border squircle text-type-950 pl-0.5 pr-2',
+        'relative overflow-hidden squircle text-type-950 pl-0.5 pr-2',
         className,
       ),
     )}
