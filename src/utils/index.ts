@@ -16,186 +16,186 @@ const saidbarOverviewLinks = [
 const saidbarThemesLinks = [
   {
     name: 'Colors',
-    path: 'docs/colors',
+    path: 'themes/colors',
   },
   {
     name: 'Effects',
-    path: 'docs/effects',
+    path: 'themes/effects',
   },
   {
     name: 'Text Styles',
-    path: 'docs/text-styles',
+    path: 'themes/text-styles',
   },
   {
     name: 'Icons Library',
-    path: 'docs/icons-library',
+    path: 'themes/icons-library',
   },
 ];
 
 const saidbarElementsLinks = [
   {
     name: 'Accordion',
-    path: 'docs/components/accordion',
+    path: '/components/accordion',
   },
   {
     name: 'Alert',
-    path: 'docs/components/alert',
+    path: '/components/alert',
   },
   {
     name: 'Alert Dialog',
-    path: 'docs/components/adialog',
+    path: '/components/adialog',
   },
   {
     name: 'Avatar',
-    path: 'docs/components/avatar',
+    path: '/components/avatar',
   },
   {
     name: 'Badge',
-    path: 'docs/components/badge',
+    path: '/components/badge',
   },
   {
     name: 'Breadcrumb',
-    path: 'docs/components/breadcrumb',
+    path: '/components/breadcrumb',
   },
   {
     name: 'Button',
-    path: 'docs/components/button',
+    path: '/components/button',
   },
   {
     name: 'Calendar',
-    path: 'docs/components/calendar',
+    path: '/components/calendar',
   },
   {
     name: 'Card',
-    path: 'docs/components/card',
+    path: '/components/card',
   },
   {
     name: 'Carousel',
-    path: 'docs/components/carousel',
+    path: '/components/carousel',
   },
   {
     name: 'Checkbox',
-    path: 'docs/components/checkbox',
+    path: '/components/checkbox',
   },
   {
     name: 'Data Table',
-    path: 'docs/components/data-table',
+    path: '/components/data-table',
   },
   {
     name: 'Data Picker',
-    path: 'docs/components/data-picker',
+    path: '/components/data-picker',
   },
   {
     name: 'Dialog',
-    path: 'docs/components/dialog',
+    path: '/components/dialog',
   },
   {
     name: 'Drawer',
-    path: 'docs/components/drawer',
+    path: '/components/drawer',
   },
   {
     name: 'Dropdown Menu',
-    path: 'docs/components/dropdown-menu',
+    path: '/components/dropdown-menu',
   },
   {
     name: 'Form',
-    path: 'docs/components/form',
+    path: '/components/form',
   },
   {
     name: 'Hover Card',
-    path: 'docs/components/hover-card',
+    path: '/components/hover-card',
   },
   {
     name: 'Input',
-    path: 'docs/components/input',
+    path: '/components/input',
   },
   {
     name: 'Input OTP',
-    path: 'docs/components/input-otp',
+    path: '/components/input-otp',
   },
   {
     name: 'Label',
-    path: 'docs/components/label',
+    path: '/components/label',
   },
   {
     name: 'Navigation Menu',
-    path: '/docs/components/navigation-menu',
+    path: '/components/navigation-menu',
   },
   {
     name: 'Pagination',
-    path: 'docs/components/pagination',
+    path: '/components/pagination',
   },
   {
     name: 'Popover',
-    path: 'docs/components/popover',
+    path: '/components/popover',
   },
   {
     name: 'Progress',
-    path: 'docs/components/progress',
+    path: '/components/progress',
   },
   {
     name: 'Radio Group',
-    path: 'docs/components/radio-group',
+    path: '/components/radio-group',
   },
   {
     name: 'Resizable',
-    path: 'docs/components/resizable',
+    path: '/components/resizable',
   },
   {
     name: 'Scroll area',
-    path: 'docs/components/scroll-area',
+    path: '/components/scroll-area',
   },
   {
     name: 'Select',
-    path: 'docs/components/select',
+    path: '/components/select',
   },
   {
     name: 'Separator',
-    path: 'docs/components/separator',
+    path: '/components/separator',
   },
   {
     name: 'Sheet',
-    path: 'docs/components/sheet',
+    path: '/components/sheet',
   },
   {
     name: 'Skeleton',
-    path: 'docs/components/skeleton',
+    path: '/components/skeleton',
   },
   {
     name: 'Slider',
-    path: 'docs/components/slider',
+    path: '/components/slider',
   },
   {
     name: 'Switch',
-    path: 'docs/components/switch',
+    path: '/components/switch',
   },
   {
     name: 'Table',
-    path: 'docs/components/table',
+    path: '/components/table',
   },
   {
     name: 'Tabs',
-    path: 'docs/components/tabs',
+    path: '/components/tabs',
   },
   {
     name: 'Textarea',
-    path: 'docs/components/textarea',
+    path: '/components/textarea',
   },
   {
     name: 'Toast',
-    path: 'docs/components/toast',
+    path: '/components/toast',
   },
   {
     name: 'Toggle',
-    path: 'docs/components/toggle',
+    path: '/components/toggle',
   },
   {
     name: 'Toggle Group',
-    path: 'docs/components/toggle-group',
+    path: '/components/toggle-group',
   },
   {
     name: 'Tooltip',
-    path: 'docs/components/tooltip',
+    path: '/components/tooltip',
   },
 ];
 export { saidbarElementsLinks, saidbarOverviewLinks, saidbarThemesLinks };

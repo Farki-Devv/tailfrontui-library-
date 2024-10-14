@@ -1,15 +1,13 @@
-import { Circle } from 'lucide-react';
-import { Alert, AlertDescription, AlertTitle } from '../components/alert';
+import { Avatar, AvatarFallback, AvatarImage } from '../components/avatar';
 function Test() {
   return (
-    <Alert className="w-[532px]">
-      <Circle className="h-4 w-4" />
-      <AlertTitle>Title</AlertTitle>
-      <AlertDescription className="text-type-500">
-        The leaves danced gently in the breeze, their rustling a symphony of
-        nature’s.
-      </AlertDescription>
-    </Alert>
+    <Avatar>
+      <AvatarImage
+        src="https://avatars.githubusercontent.com/u/173272923?s=200&v=4"
+        alt="@tailfront"
+      />
+      <AvatarFallback>CN</AvatarFallback>
+    </Avatar>
   );
 }
 

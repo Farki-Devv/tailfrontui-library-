@@ -21,7 +21,7 @@
         <DialogDescription>
           This action cannot be undone. This will permanently delete your account
           and remove your data from our servers.
-        /DialogDescription>
+        </DialogDescription>
       </DialogHeader>
     </DialogContent>
   </Dialog>
@@ -139,6 +139,7 @@ DialogDescription.displayName = DialogPrimitive.Description.displayName;
 const Dialog = DialogPrimitive.Root;
 
 export {
+  Dialog,
   DialogClose,
   DialogContent,
   DialogDescription,
@@ -146,5 +147,4 @@ export {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  Dialog,
 };

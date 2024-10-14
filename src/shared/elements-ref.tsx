@@ -5,7 +5,7 @@ interface Element {
 }
 function ElementsRef({ children }: Element) {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 max-md:hidden">
       <ElementHeader size="text-2xl">API Reference</ElementHeader>
       {children}
     </div>

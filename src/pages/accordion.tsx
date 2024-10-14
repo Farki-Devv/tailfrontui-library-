@@ -93,11 +93,10 @@ function AccordionPage() {
         <ElementsReference
           elements={[
             {
-              Property: 'dashed',
-              Description:
-                'modal that expects response',
+              Property: 'Default',
+              Description: '',
               Type: 'string',
-              Default: 'true',
+              Default: 'false',
               Version: '1',
             },
           ]}
@@ -123,7 +122,7 @@ const Example = ({ header, description, padding, size }: ExampleProps) => {
         type="single"
         collapsible
         defaultValue="1"
-        className="w-[rem] md:w-[20.25rem]"
+        className="md:w-[20.25rem]"
       >
         <AccordionItem value="1">
           <AccordionTrigger>Title</AccordionTrigger>

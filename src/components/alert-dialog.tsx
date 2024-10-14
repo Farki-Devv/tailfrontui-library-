@@ -161,6 +161,7 @@ AlertDialogCancel.displayName = AlertDialogPrimitive.Cancel.displayName;
 const AlertDialog = AlertDialogPrimitive.Root;
 
 export {
+  AlertDialog,
   AlertDialogAction,
   AlertDialogCancel,
   AlertDialogContent,
@@ -169,5 +170,4 @@ export {
   AlertDialogHeader,
   AlertDialogTitle,
   AlertDialogTrigger,
-  AlertDialog,
 };

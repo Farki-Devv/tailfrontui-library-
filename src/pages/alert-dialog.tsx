@@ -40,8 +40,7 @@ function AlertDialogPage() {
       {/* Element name */}
       <ElementsName
         name="Alert Dialog"
-        description="The Alert Dialog component provides a modal dialog that captures
-            user attention for imp"
+        description="The Alert Dialog component provides a modal dialog that captures user attention for important information or actions. It’s ideal for warnings, confirmations, or critical messages that require user interaction before proceeding."
       >
         <Example />
       </ElementsName>
@@ -131,11 +130,11 @@ function AlertDialogPage() {
           description="Use the size prop to control size of the dialog. It will affect the padding and border-radius of the Content."
           size="sm"
         />
-        <Example
+        {/* <Example
           header="Dashed"
           description="Use the size prop to control size of the dialog. It will affect the padding and border-radius of the Content. Use it in conjunction with the width, minWidth and maxWidth props to control the width of the dialog."
           size="sm"
-        />
+        /> */}
       </ElementsExample>
       <NavigationButtons />
     </ElementsContainer>
@@ -164,7 +163,7 @@ const Example = ({ header, description, padding, size }: ExampleProps) => {
               account and remove your data from our servers.
             </AlertDialogDescription>
           </AlertDialogHeader>
-          <AlertDialogFooter>
+          <AlertDialogFooter className="flex max-md:flex-col gap-1">
             <AlertDialogCancel>Cancel</AlertDialogCancel>
             <AlertDialogAction>Continue</AlertDialogAction>
           </AlertDialogFooter>

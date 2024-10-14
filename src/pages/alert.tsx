@@ -136,7 +136,7 @@ const Example = ({
       padding={padding}
       elementCode={alertCode}
     >
-      <Alert className="w-[532px]" variant={variant}>
+      <Alert className="md:w-[532px]" variant={variant}>
         <Circle className="h-4 w-4" />
         <AlertTitle>Title</AlertTitle>
         <AlertDescription

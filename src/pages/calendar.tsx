@@ -1,5 +1,5 @@
-function Calendar() {
-  return <div></div>;
+function CalendarPage() {
+  return <div>calendar</div>;
 }
 
-export default Calendar;
+export default CalendarPage;

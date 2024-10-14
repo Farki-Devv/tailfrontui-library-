@@ -19,7 +19,7 @@ function ElementsExampleTabs({
   elementCode,
 }: ElementsExampleTabsProps) {
   return (
-    <div className="flex flex-col gap-4">
+    <div className="flex flex-col gap-4 w-full">
       <div className="flex flex-col">
         <ElementHeader size="text-lg">{header}</ElementHeader>
         <span className="text-base text-type-500">{description}</span>
@@ -35,7 +35,7 @@ function ElementsExampleTabs({
         {/* Element preview */}
         <TabsContent value="preview">
           <div
-            className={`${padding && padding} ${!padding && 'md:px-32'} ${size === 'sm' ? 'h-[20.25rem]' : 'h-[27.25rem]'} w-full flex justify-center items-center rounded-lg border squircle`}
+            className={`w-full ${padding && padding} ${!padding && 'md:px-32'} ${size === 'sm' ? 'h-[20.25rem]' : 'h-[27.25rem]'}  flex justify-center items-center rounded-lg border squircle`}
           >
             {children}
           </div>

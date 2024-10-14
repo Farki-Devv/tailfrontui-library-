@@ -62,7 +62,7 @@ const Layout = () => {
       {/* Content */}
       <div className="flex">
         {/* Saidbar left */}
-        <div className="mt-10">
+        <div className="mt-10 max-md:hidden">
           <Saidbar />
         </div>
 
@@ -106,188 +106,188 @@ const router = createBrowserRouter([
       },
       // Themes
       {
-        path: '/docs/colors',
+        path: '/themes/colors',
         element: <Colors />,
       },
       {
-        path: '/docs/effects',
+        path: '/themes/effects',
         element: <Effects />,
       },
       {
-        path: '/docs/text-styles',
+        path: '/themes/text-styles',
         element: <TextStyles />,
       },
       {
-        path: '/docs/icons-library',
+        path: '/themes/icons-library',
         element: <IconLibrary />,
       },
       // components
       {
-        path: '/docs/components/accordion',
+        path: '/components/accordion',
         element: <AccordionPage />,
       },
       {
-        path: '/docs/components/alert',
+        path: '/components/alert',
         element: <Alert />,
       },
       {
-        path: '/docs/components/adialog',
+        path: '/components/adialog',
         element: <AlertDialogPage />,
       },
       {
-        path: '/docs/components/avatar',
+        path: '/components/avatar',
         element: <Avatar />,
       },
       {
-        path: '/docs/components/badge',
+        path: '/components/badge',
         element: <Badge />,
       },
       {
-        path: '/docs/components/breadcrumb',
+        path: '/components/breadcrumb',
         element: <Breadcrumb />,
       },
       {
-        path: '/docs/components/button',
+        path: '/components/button',
         element: <Button />,
       },
       {
-        path: '/docs/components/calendar',
+        path: '/components/calendar',
         element: <Calendar />,
       },
       {
-        path: '/docs/components/card',
+        path: '/components/card',
         element: <Card />,
       },
       {
-        path: '/docs/components/carousel',
+        path: '/components/carousel',
         element: <Carousel />,
       },
       {
-        path: '/docs/components/checkbox',
+        path: '/components/checkbox',
         element: <Checkbox />,
       },
       {
-        path: '/docs/components/data-table',
+        path: '/components/data-table',
         element: <DataTable />,
       },
       {
-        path: '/docs/components/data-picker',
+        path: '/components/data-picker',
         element: <DataPicker />,
       },
       {
-        path: '/docs/components/dialog',
+        path: '/components/dialog',
         element: <Dialog />,
       },
       {
-        path: '/docs/components/drawer',
+        path: '/components/drawer',
         element: <Drawer />,
       },
       {
-        path: '/docs/components/dropdown-menu',
+        path: '/components/dropdown-menu',
         element: <DropdownMenu />,
       },
       {
-        path: '/docs/components/form',
+        path: '/components/form',
         element: <Form />,
       },
       {
-        path: '/docs/components/hover-card',
+        path: '/components/hover-card',
         element: <HoverCard />,
       },
       {
-        path: '/docs/components/input',
+        path: '/components/input',
         element: <Input />,
       },
       {
-        path: '/docs/components/input-otp',
+        path: '/components/input-otp',
         element: <InputOTP />,
       },
       {
-        path: '/docs/components/label',
+        path: '/components/label',
         element: <Label />,
       },
       {
-        path: '/docs/components/navigation-menu',
+        path: '/components/navigation-menu',
         element: <NavigationMenu />,
       },
       {
-        path: '/docs/components/pagination',
+        path: '/components/pagination',
         element: <Pagination />,
       },
       {
-        path: '/docs/components/popover',
+        path: '/components/popover',
         element: <Popover />,
       },
       {
-        path: '/docs/components/progress',
+        path: '/components/progress',
         element: <Progress />,
       },
       {
-        path: '/docs/components/radio-group',
+        path: '/components/radio-group',
         element: <RadioGroup />,
       },
       {
-        path: '/docs/components/resizable',
+        path: '/components/resizable',
         element: <Resizable />,
       },
       {
-        path: '/docs/components/scroll-area',
+        path: '/components/scroll-area',
         element: <ScrollArea />,
       },
       {
-        path: '/docs/components/select',
+        path: '/components/select',
         element: <Select />,
       },
       {
-        path: '/docs/components/separator',
+        path: '/components/separator',
         element: <Separator />,
       },
       {
-        path: '/docs/components/sheet',
+        path: '/components/sheet',
         element: <Sheet />,
       },
       {
-        path: '/docs/components/skeleton',
+        path: '/components/skeleton',
         element: <Skeleton />,
       },
       {
-        path: '/docs/components/carousel',
+        path: '/components/carousel',
         element: <Carousel />,
       },
       {
-        path: '/docs/components/slider',
+        path: '/components/slider',
         element: <Slider />,
       },
       {
-        path: '/docs/components/switch',
+        path: '/components/switch',
         element: <Switch />,
       },
       {
-        path: '/docs/components/table',
+        path: '/components/table',
         element: <Table />,
       },
       {
-        path: '/docs/components/tabs',
+        path: '/components/tabs',
         element: <Tabs />,
       },
       {
-        path: '/docs/components/textarea',
+        path: '/components/textarea',
         element: <Textarea />,
       },
       {
-        path: '/docs/components/toast',
+        path: '/components/toast',
         element: <Toast />,
       },
       {
-        path: '/docs/components/toggle',
+        path: '/components/toggle',
         element: <Toggle />,
       },
       {
-        path: '/docs/components/toggle-group',
+        path: '/components/toggle-group',
         element: <Carousel />,
       },
       {
-        path: '/docs/components/tooltip',
+        path: '/components/tooltip',
         element: <Tooltip />,
       },
     ],

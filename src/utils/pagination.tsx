@@ -16,32 +16,33 @@ export function NavigationButtons() {
   const prevLink = saidbarElementsLinks[currentIndex - 1];
   const nextLink = saidbarElementsLinks[currentIndex + 1];
 
-  // Agar path allaqachon '/docs/' bo'lsa, uni qo'shmaymiz
+  /**
+   * Path'ni kerakli formatda konstruksiya qilish.
+   * Agar path `components` bilan boshlangan bo'lsa, uni to'g'ridan-to'g'ri qo'llaymiz.
+   */
   const constructPath = (path: string) => {
-    if (location.pathname.includes('/docs') && path.includes('/docs')) {
-      // Agar path allaqachon 'docs' ni o'z ichiga olsa, uni yana qo'shmaymiz
-      return path;
-    } else {
-      return `/${path}`;
+    if (path.startsWith('components')) {
+      return `${path}`; // `docs/` ni qo‘shamiz
     }
+    return `${path}`;
   };
-  
+
   return (
     <div className="flex justify-between">
-      {/* last component */}
+      {/* Oldingi komponent */}
       {prevLink && (
         <Button
-          variant={'outline'}
+          variant="outline"
           onClick={() => navigate(constructPath(prevLink.path))}
         >
           <ChevronLeft className="size-4" /> {prevLink.name}
         </Button>
       )}
 
-      {/* Next component */}
+      {/* Keyingi komponent */}
       {nextLink && (
         <Button
-          variant={'outline'}
+          variant="outline"
           className="ml-auto"
           onClick={() => navigate(constructPath(nextLink.path))}
         >

@@ -17,7 +17,7 @@ const navLinks = [
   },
   {
     name: 'Components',
-    path: '/docs/components/accordion',
+    path: '/components',
   },
   {
     name: 'Themes',
@@ -35,9 +35,9 @@ function Navbar() {
   return (
     <>
       <div className="flex justify-between items-center h-[84px]">
-        <div className="flex gap-8">
+        <div className="flex gap-8 items-center">
           {/* Logo */}
-          <div>
+          <div className="flex items-center">
             <div className="max-md:hidden">
               <Logo />
             </div>
@@ -73,12 +73,14 @@ function Navbar() {
               ⌘ K
             </div>
           </div>
-          <div className="grid grid-cols-2 w-full gap-2 items-center max-ld:hidden">
+          <div className="grid grid-cols-2 w-full gap-2 items-center max-lg:hidden">
             <Button variant={'outline'} className="tracking-wide">
               <FiGithub className="text-type-500" />
               GitHub
             </Button>
-            <Button>Get Started</Button>
+            <Button>
+              <span className="max-xl:flex">Get</span> Start
+            </Button>
           </div>
           <div className="hidden max-md:flex items-center">
             <FaGithub className="text-type-500 size-6 cursor-pointer" />
