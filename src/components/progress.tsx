@@ -6,7 +6,7 @@
 
   import { Progress } from '@/components/progress';
 
-  Progress value={40} />
+  <Progress value={40} />
 
  * @npm i react
  * @npm i --save-dev @types/react
@@ -19,7 +19,6 @@ import * as ProgressPrimitive from '@radix-ui/react-progress';
 import clsx from 'clsx';
 import * as React from 'react';
 import { twMerge } from 'tailwind-merge';
-
 const Progress = React.forwardRef<
   React.ElementRef<typeof ProgressPrimitive.Root>,
   React.ComponentPropsWithoutRef<typeof ProgressPrimitive.Root>
@@ -27,15 +26,12 @@ const Progress = React.forwardRef<
   <ProgressPrimitive.Root
     ref={ref}
     className={twMerge(
-      clsx(
-        'h-2 overflow-hidden rounded-full bg-container-100',
-        className,
-      ),
+      clsx('h-2 overflow-hidden rounded-full bg-container-100', className),
     )}
     {...props}
   >
     <ProgressPrimitive.Indicator
-      className="h-full bg-accent-800 transition-all rounded-full"
+      className="h-full w-full flex-1 bg-accent-800 transition-all rounded-full"
       style={{ transform: `translateX(-${100 - (value || 0)}%)` }}
     />
   </ProgressPrimitive.Root>

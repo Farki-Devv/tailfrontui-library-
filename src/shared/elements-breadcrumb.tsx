@@ -20,7 +20,7 @@ function ElementsBreadcrumb({ page }: ElementsBreadcrumbProps) {
           /
           <BreadcrumbEllipsis />/
           <BreadcrumbItem>
-            <BreadcrumbLink href="/components">Docs</BreadcrumbLink>
+            <BreadcrumbLink href="/docs">Docs</BreadcrumbLink>
           </BreadcrumbItem>
           /
           <BreadcrumbItem>

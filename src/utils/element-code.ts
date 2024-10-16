@@ -204,9 +204,7 @@ const alertDialogUsageCode = `import {
  AlertDialogTrigger,
 } from "@/components/alert-dialog`;
 
-const alertDialogUsageTwoCode = `function Test() {
-  return (
-    <AlertDialog>
+const alertDialogUsageTwoCode = `<AlertDialog>
     <AlertDialogTrigger>Open</AlertDialogTrigger>
     <AlertDialogContent>
       <AlertDialogHeader>
@@ -221,11 +219,7 @@ const alertDialogUsageTwoCode = `function Test() {
         <AlertDialogAction>Continue</AlertDialogAction>
       </AlertDialogFooter>
     </AlertDialogContent>
-  </AlertDialog>
-  );
-}
-
-export default Test;`;
+  </AlertDialog>`;
 
 export {
   alertDialogCode,
@@ -343,8 +337,7 @@ const accordionUsageCode = `import {
   AccordionItem,
   AccordionTrigger,
 } from '../components/accordion';`;
-const accordionUsageTwoCode = `function Test() {
-  return <Accordion type="single" collapsible defaultValue="1">
+const accordionUsageTwoCode = `<Accordion type="single" collapsible defaultValue="1">
   <AccordionItem value="1">
     <AccordionTrigger>Title</AccordionTrigger>
     <AccordionContent>
@@ -359,10 +352,7 @@ const accordionUsageTwoCode = `function Test() {
       nature’s.
     </AccordionContent>
   </AccordionItem>
-</Accordion>
-}
-
-export default Test;`;
+</Accordion>`;
 export {
   accordionCode,
   accordionSecondStepCode,
@@ -461,20 +451,14 @@ AlertDescription,
 AlertTitle 
 } from '../components/alert'`;
 
-const alertUsageTwoCode = `function Test() {
-  return (
-    <Alert className="w-[532px]">
+const alertUsageTwoCode = `<Alert className="w-[532px]">
       <Circle className="h-4 w-4" />
       <AlertTitle>Title</AlertTitle>
       <AlertDescription className="text-type-500">
         The leaves danced gently in the breeze, their rustling a symphony of
         nature’s.
       </AlertDescription>
-    </Alert>
-  );
-}
-
-export default Test;`;
+    </Alert>`;
 export { alertCode, alertSecondStepCode, alertUsageCode, alertUsageTwoCode };
 
 // avatar code
@@ -554,19 +538,13 @@ Avatar.displayName = AvatarPrimitive.Root.displayName;
 export { AvatarFallback, AvatarImage, Avatar };
 ;`;
 const avatarUsageCode = `import { Avatar, AvatarFallback, AvatarImage } from '../components/avatar'`;
-const avatarUsageTwoCode = `function Test() {
-  return (
-    <Avatar>
+const avatarUsageTwoCode = `<Avatar>
       <AvatarImage
         src="https://avatars.githubusercontent.com/u/173272923?s=200&v=4"
         alt="@tailfront"
       />
       <AvatarFallback>CN</AvatarFallback>
-    </Avatar>
-  );
-}
-
-export default Test;`;
+    </Avatar>`;
 export {
   avatarCode,
   avatarSecondStepCode,
@@ -620,11 +598,7 @@ const Badge: React.FC<BadgeProps> = ({ className, variant, ...props }) => {
 export { type BadgeProps, badgeVariants, Badge };
 `;
 const badgeUsageCode = `import { Badge } from '../components/badge';`;
-const badgeUsageTwoCode = `function Test() {
-  return (
-    <Badge variant="default">Badge</Badge>
-  );
-}`;
+const badgeUsageTwoCode = `<Badge variant="default">Badge</Badge>`;
 export { badgeCode, badgeSecondStepCode, badgeUsageCode, badgeUsageTwoCode };
 
 // Breadcrumb code
@@ -781,10 +755,7 @@ const breadcrumbUsageCode = `import {
   BreadcrumbPage,
   BreadcrumbSeparator,
 } from '../components/breadcrumb';`;
-const breadcrumbUsageTwoCode = `
-function Test() {
-  return (
-   <Breadcrumb>
+const breadcrumbUsageTwoCode = `<Breadcrumb>
         <BreadcrumbList>
           <BreadcrumbItem>
             <BreadcrumbLink href="/docs">Docs</BreadcrumbLink>
@@ -800,9 +771,7 @@ function Test() {
             <BreadcrumbPage>Current Page</BreadcrumbPage>
           </BreadcrumbItem>
         </BreadcrumbList>
-      </Breadcrumb>
-  )
-}`;
+      </Breadcrumb>`;
 const breadcrumbcodeTwo = `import {
   Breadcrumb,
   BreadcrumbList,
@@ -904,11 +873,8 @@ Button.displayName = 'Button';
 export { Button, buttonVariants };
 }`;
 const buttonUsageCode = `import { Button } from '../components/button';`;
-const buttonUsageTwoCode = `function Test() {
-  return (
-    <Button variant="primary">Button</Button>
-  );
-}`;
+const buttonUsageTwoCode = `<Button variant="primary">Button</Button>
+`;
 export { buttonSecondStepCode, buttonUsageCode, buttonUsageTwoCode };
 //card code
 
@@ -1036,9 +1002,7 @@ const cardUsageCode = `import {
   CardHeader,
   CardTitle,
 } from '../components/card';`;
-const cardUsageTwoCode = `function Test() {
-  return (
-     <Card className="w-[20rem]">
+const cardUsageTwoCode = `<Card className="w-[20rem]">
         <CardHeader>
           <CardTitle>Title</CardTitle>
           <CardDescription>Subtitle</CardDescription>
@@ -1050,9 +1014,7 @@ const cardUsageTwoCode = `function Test() {
           <Button variant={'outline'}>cancel</Button>
           <Button>Done</Button>
         </CardFooter>
-      </Card>
-  );
-}`;
+      </Card>`;
 export { cardCode, cardSecondStepCode, cardUsageCode, cardUsageTwoCode };
 
 // Dialog code
@@ -1399,9 +1361,7 @@ const drawerUsageCode = `import {
   DrawerTrigger,
 } from '../components/drawer';`;
 
-const drawerUsageTwoCode = `export function Test() {
-  return (
-      <Drawer>
+const drawerUsageTwoCode = `<Drawer>
         <DrawerTrigger>
           <Button>Open</Button>
         </DrawerTrigger>
@@ -1417,8 +1377,6 @@ const drawerUsageTwoCode = `export function Test() {
           </DrawerFooter>
         </DrawerContent>
       </Drawer>
-  );
-}
 `;
 export {
   drawerCode,
@@ -1747,9 +1705,7 @@ const dropdownmenuUsageCode = `import {
   DropdownMenuSubTrigger,
   DropdownMenuTrigger,
 } from '../components/dropdown-menu';`;
-const dropdownmenuUsageTwoCode = `function Test(){
-  return (
-  <DropdownMenu>
+const dropdownmenuUsageTwoCode = `<DropdownMenu>
         <DropdownMenuTrigger asChild>
           <Button variant="outline">Open</Button>
         </DropdownMenuTrigger>
@@ -1820,9 +1776,6 @@ const dropdownmenuUsageTwoCode = `function Test(){
           </DropdownMenuItem>
         </DropdownMenuContent>
       </DropdownMenu>
-  )
-}
-  export {Test}
 `;
 const dropdownmenuTwoCode = `import {
   DropdownMenu,
@@ -2221,3 +2174,1282 @@ return (
 `;
 
 export { formCode, formSecondStepCode, formUsageCode, formUsageTwoCode };
+// hover-card code
+
+const hovercardCode = `import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from '../components/hover-card';
+export function Test(){
+  return (
+   <HoverCard>
+        <HoverCardTrigger>
+          <Button variant={'ghost'}>NextJS</Button>
+        </HoverCardTrigger>
+        <HoverCardContent>
+          <div className="flex gap-3 w-[18.875rem]">
+            <img
+              src="https://avatars.githubusercontent.com/u/173272923?s=200&v=4"
+              alt=""
+              className="size-12 rounded-full"
+            />
+            <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1">
+                <span className="text-base font-medium">@NextJS</span>
+                <span className="text-sm text-type-500">
+                  The React Framework – created and maintained by @vercel.
+                </span>
+              </div>
+              <div className="text-xs text-type-400 flex gap-1">
+                <IconCalendarWeek className="size-4" />
+                Joined Dec 2021
+              </div>
+            </div>
+          </div>
+        </HoverCardContent>
+      </HoverCard>
+  )
+} 
+`;
+const hovercardSecondStepCode = `
+import * as HoverCardPrimitive from '@radix-ui/react-hover-card';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const HoverCard = HoverCardPrimitive.Root;
+
+const HoverCardTrigger = HoverCardPrimitive.Trigger;
+
+const HoverCardContent = React.forwardRef<
+  React.ElementRef<typeof HoverCardPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof HoverCardPrimitive.Content>
+>(({ className, align = 'center', sideOffset = 4, ...props }, ref) => (
+  <HoverCardPrimitive.Content
+    ref={ref}
+    align={align}
+    sideOffset={sideOffset}
+    className={twMerge(
+      clsx(
+        'z-50 mt-3 rounded-lg squircle shadow-md border bg-container-50 p-4 text-type-950 ml-1',
+        className,
+      ),
+    )}
+    {...props}
+  />
+));
+HoverCardContent.displayName = HoverCardPrimitive.Content.displayName;
+
+export { HoverCard, HoverCardContent, HoverCardTrigger };
+`;
+const hovercardUsageCode = `import {
+  HoverCard,
+  HoverCardContent,
+  HoverCardTrigger,
+} from '../components/hover-card';`;
+const hovercardUsageTwoCode = `<HoverCard>
+        <HoverCardTrigger>
+          <Button variant={'ghost'}>NextJS</Button>
+        </HoverCardTrigger>
+        <HoverCardContent>
+          <div className="flex gap-3 w-[18.875rem]">
+            <img
+              src="https://avatars.githubusercontent.com/u/173272923?s=200&v=4"
+              alt=""
+              className="size-12 rounded-full"
+            />
+            <div className="flex flex-col gap-2">
+              <div className="flex flex-col gap-1">
+                <span className="text-base font-medium">@NextJS</span>
+                <span className="text-sm text-type-500">
+                  The React Framework – created and maintained by @vercel.
+                </span>
+              </div>
+              <div className="text-xs text-type-400 flex gap-1">
+                <IconCalendarWeek className="size-4" />
+                Joined Dec 2021
+              </div>
+            </div>
+          </div>
+        </HoverCardContent>
+      </HoverCard>`;
+export {
+  hovercardCode,
+  hovercardSecondStepCode,
+  hovercardUsageCode,
+  hovercardUsageTwoCode,
+};
+
+// input code
+
+const inputCode = `import { Input } from '../components/input';
+import { Label } from '../components/label';
+
+export function Test(){
+  return (
+      <div>
+        <Label>Label</Label>
+        <Input placeholder="Text" className="w-[17.5rem]" />
+      </div>
+  )
+} 
+`;
+const inputSecondStepCode = `import clsx from 'clsx';
+import React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+interface InputProps extends React.InputHTMLAttributes<HTMLInputElement> {}
+
+const Input = React.forwardRef<HTMLInputElement, InputProps>(
+  ({ className, type, ...props }, ref) => {
+    return (
+      <input
+        type={type}
+        className={twMerge(
+          clsx(
+            'flex w-full border border-stroke-200 rounded-lg bg-container-50 px-3 py-2 text-sm placeholder:text-type-400 focus-visible:outline-none focus-visible:ring focus:ring-accent-100 disabled:cursor-not-allowed disabled:opacity-50 text-type-950 file:text-type-950 tracking-normal file:border-0 file:bg-transparent file:text-sm file:font-medium',
+            className,
+          ),
+        )}
+        ref={ref}
+        {...props}
+      />
+    );
+  },
+);
+
+export { Input };
+`;
+const ionputUsageCode = `import { Input } from '../components/input';`;
+const inputUsageTwoCode = `<div>
+        <Label>Label</Label>
+        <Input placeholder="Text" className="w-[17.5rem]" />
+      </div>`;
+export { inputCode, inputSecondStepCode, inputUsageTwoCode, ionputUsageCode };
+
+// onput-otp code
+
+const inputOtpCode = `import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSeparator,
+  InputOTPSlot,
+} from '../components/input-otp';
+ 
+export function Test(){
+  return (
+       <InputOTP maxLength={6}>
+        <InputOTPGroup>
+          <InputOTPSlot index={0} />
+          <InputOTPSlot index={1} />
+          <InputOTPSlot index={2} />
+        </InputOTPGroup>
+        <InputOTPSeparator />
+        <InputOTPGroup>
+          <InputOTPSlot index={3} />
+          <InputOTPSlot index={4} />
+          <InputOTPSlot index={5} />
+        </InputOTPGroup>
+      </InputOTP>
+  )
+} 
+`;
+const inputOtpTwoCode = `import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSeparator,
+  InputOTPSlot,
+} from '../components/input-otp';
+ 
+ function Test(){
+  return (
+   <InputOTP maxLength={6}>
+        <InputOTPGroup>
+          <InputOTPSlot index={0} />
+          <InputOTPSlot index={1} />
+        </InputOTPGroup>
+        <InputOTPSeparator />
+        <InputOTPGroup>
+          <InputOTPSlot index={2} />
+          <InputOTPSlot index={3} />
+        </InputOTPGroup>
+        <InputOTPSeparator />
+        <InputOTPGroup>
+          <InputOTPSlot index={4} />
+          <InputOTPSlot index={5} />
+        </InputOTPGroup>
+      </InputOTP>)
+ } 
+`;
+const inputOtpThreeCode = `import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSlot,
+}
+
+export function Test(){
+  return (
+         <InputOTP maxLength={6}>
+        <InputOTPGroup>
+          <InputOTPSlot index={0} />
+          <InputOTPSlot index={1} />
+          <InputOTPSlot index={2} />
+          <InputOTPSlot index={3} />
+          <InputOTPSlot index={4} />
+          <InputOTPSlot index={5} />
+        </InputOTPGroup>
+      </InputOTP>
+  )
+}`;
+const inputOtpUsageCode = `import {
+  InputOTP,
+  InputOTPGroup,
+  InputOTPSeparator,
+  InputOTPSlot,
+} from '../components/input-otp'`;
+const ionputOtpUsageTwoCode = `<InputOTP maxLength={6}>
+        <InputOTPGroup>
+          <InputOTPSlot index={0} />
+          <InputOTPSlot index={1} />
+          <InputOTPSlot index={2} />
+        </InputOTPGroup>
+        <InputOTPSeparator />
+        <InputOTPGroup>
+          <InputOTPSlot index={3} />
+          <InputOTPSlot index={4} />
+          <InputOTPSlot index={5} />
+        </InputOTPGroup>
+      </InputOTP>`;
+const inputotpSecondStepCode = `import clsx from 'clsx';
+import { OTPInput, OTPInputContext } from 'input-otp';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const InputOTP = React.forwardRef<
+  React.ElementRef<typeof OTPInput>,
+  React.ComponentPropsWithoutRef<typeof OTPInput>
+>(({ className, containerClassName, ...props }, ref) => (
+  <OTPInput
+    ref={ref}
+    containerClassName={twMerge(
+      clsx(
+        'flex items-center gap-2 has-[:disabled]:opacity-50',
+        containerClassName,
+      ),
+    )}
+    className={twMerge(clsx('disabled:cursor-not-allowed', className))}
+    {...props}
+  />
+));
+InputOTP.displayName = 'InputOTP';
+
+const InputOTPGroup = React.forwardRef<
+  React.ElementRef<'div'>,
+  React.ComponentPropsWithoutRef<'div'>
+>(({ className, ...props }, ref) => (
+  <div
+    ref={ref}
+    className={twMerge(clsx('flex items-center border squircle', className))}
+    {...props}
+  />
+));
+InputOTPGroup.displayName = 'InputOTPGroup';
+
+const InputOTPSlot = React.forwardRef<
+  React.ElementRef<'div'>,
+  React.ComponentPropsWithoutRef<'div'> & { index: number }
+>(({ index, className, ...props }, ref) => {
+  const inputOTPContext = React.useContext(OTPInputContext);
+  const { char, hasFakeCaret, isActive } = inputOTPContext.slots[index];
+
+  return (
+    <div
+      ref={ref}
+      className={twMerge(
+        clsx(
+          'relative flex size-9 px-3 py-2 bg-container-50 border-l last:border-r text-type-950 border-y text-sm first:rounded-l-lg last:rounded-r-lg',
+          isActive && 'z-10 ring ring-accent-100',
+          className,
+        ),
+      )}
+      {...props}
+    >
+      {char}
+      {hasFakeCaret && (
+        <div className="pointer-events-none absolute inset-0 flex items-center justify-center">
+          <div className="h-4 w-px animate-caret-blink bg-container-50 duration-1000" />
+        </div>
+      )}
+    </div>
+  );
+});
+InputOTPSlot.displayName = 'InputOTPSlot';
+
+const InputOTPSeparator = React.forwardRef<
+  React.ElementRef<'div'>,
+  React.ComponentPropsWithoutRef<'div'>
+>(({ ...props }, ref) => (
+  <div ref={ref} role="separator" {...props} className="text-sm text-type-950">
+    -
+  </div>
+));
+InputOTPSeparator.displayName = 'InputOTPSeparator';
+
+export { InputOTP, InputOTPGroup, InputOTPSeparator, InputOTPSlot };
+
+`;
+export {
+  inputOtpCode,
+  inputOtpThreeCode,
+  inputOtpTwoCode,
+  inputOtpUsageCode,
+  inputotpSecondStepCode,
+  ionputOtpUsageTwoCode,
+};
+
+// label code
+
+const labelCode = `import { Label } from '../components/label';
+
+function Test(){
+  return (
+       <div>
+        <Label>Label</Label>
+        <Input placeholder="Label" className="w-[17.5rem]" />
+      </div>
+  )
+}
+`;
+const labelUsageCode = `import { Label } from '../components/label';`;
+const labelUsageTwoCode = `<div>
+        <Label>Label</Label>
+        <Input placeholder="Label" className="w-[17.5rem]" />
+      </div>`;
+const labelSecondStepCode = `
+import * as LabelPrimitive from '@radix-ui/react-label';
+import { cva, type VariantProps } from 'class-variance-authority';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const labelVariants = cva(
+  'text-sm font-medium peer-disabled:cursor-not-allowed peer-desabled:opacity-70  text-type-950',
+);
+
+const Label = React.forwardRef<
+  React.ElementRef<typeof LabelPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof LabelPrimitive.Root> &
+    VariantProps<typeof labelVariants>
+>(({ className, ...props }, ref) => (
+  <LabelPrimitive.Root
+    ref={ref}
+    className={twMerge(clsx(labelVariants(), className))}
+    {...props}
+  />
+));
+Label.displayName = LabelPrimitive.Root.displayName;
+
+export { labelVariants, Label };`;
+export { labelCode, labelSecondStepCode, labelUsageCode, labelUsageTwoCode };
+
+// navgation-menu code
+
+const navigationmenuSecondStepCode = `const NavigationMenu = React.forwardRef<
+  React.ElementRef<typeof NavigationMenuPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Root>
+>(({ className, children, ...props }, ref) => (
+  <NavigationMenuPrimitive.Root
+    ref={ref}
+    className={twMerge(
+      clsx('relative z-10 flex max-w-max flex-1 items-center justify-center'),
+      className,
+    )}
+    {...props}
+  >
+    {children}
+  </NavigationMenuPrimitive.Root>
+));
+NavigationMenu.displayName = NavigationMenuPrimitive.Root.displayName;
+
+const NavigationMenuList = React.forwardRef<
+  React.ElementRef<typeof NavigationMenuPrimitive.List>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.List>
+>(({ className, ...props }, ref) => (
+  <NavigationMenuPrimitive.List
+    ref={ref}
+    className={twMerge(
+      clsx('group flex flex-1 list-none items-center justify-center space-x-1'),
+      className,
+    )}
+    {...props}
+  />
+));
+NavigationMenuList.displayName = NavigationMenuPrimitive.List.displayName;
+
+const NavigationMenuItem = NavigationMenuPrimitive.Item;
+
+const navigationMenuTriggerStyle = cva(
+  'inline-flex text-type-950 items-center justify-center rounded-md px-3 py-2 text-sm font-medium hover:bg-container-100 focus:bg-container-100 focus:outline-none',
+);
+
+const NavigationMenuTrigger = React.forwardRef<
+  React.ElementRef<typeof NavigationMenuPrimitive.Trigger>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Trigger>
+>(({ className, children, ...props }, ref) => (
+  <NavigationMenuPrimitive.Trigger
+    ref={ref}
+    className={twMerge(clsx(navigationMenuTriggerStyle(), 'group', className))}
+    {...props}
+  >
+    {children}
+    <IconChevronDown
+      className="relative top-[1px] ml-1 size-4 transition duration-200 group-data-[state=open]:rotate-180"
+      aria-hidden="true"
+    />
+  </NavigationMenuPrimitive.Trigger>
+));
+NavigationMenuTrigger.displayName = NavigationMenuPrimitive.Trigger.displayName;
+
+const NavigationMenuContent = React.forwardRef<
+  React.ElementRef<typeof NavigationMenuPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Content>
+>(({ className, ...props }, ref) => (
+  <div className="absolute">
+    <NavigationMenuPrimitive.Content
+      ref={ref}
+      className={twMerge(
+        clsx(
+          'left-0 mt-4 border squircle bg-container-50 w-full data-[motion^=from-]:animate-in data-[motion^=to-]:animate-out data-[motion^=from-]:fade-in data-[motion^=to-]:fade-out data-[motion=from-end]:slide-in-from-righ md:absolute md:w-auto',
+          className,
+        ),
+      )}
+      {...props}
+    />
+  </div>
+));
+NavigationMenuContent.displayName = NavigationMenuPrimitive.Content.displayName;
+
+const NavigationMenuLink = NavigationMenuPrimitive.Link;
+
+const NavigationMenuViewport = React.forwardRef<
+  React.ElementRef<typeof NavigationMenuPrimitive.Viewport>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Viewport>
+>(({ className, ...props }, ref) => (
+  <div
+    className={twMerge(clsx('absolute left-0 top-full flex justify-center'))}
+  >
+    <NavigationMenuPrimitive.Viewport
+      className={twMerge(
+        clsx(
+          'origin-top-center relative mt-1.5 h-[var(--radix-navigation-menu-viewport-height)] w-full overflow-hidden rounded-md border shadow-lg data-[state=open]:animate-in data-[state=closed]:animate-out data-[state=closed]:zoom-out-95 data-[state=open]:zoom-in-90 md:w-[var(--radix-navigation-menu-viewport-width)]',
+          className,
+        ),
+      )}
+      ref={ref}
+      {...props}
+    />
+  </div>
+));
+NavigationMenuViewport.displayName =
+  NavigationMenuPrimitive.Viewport.displayName;
+
+const NavigationMenuIndicator = React.forwardRef<
+  React.ElementRef<typeof NavigationMenuPrimitive.Indicator>,
+  React.ComponentPropsWithoutRef<typeof NavigationMenuPrimitive.Indicator>
+>(({ className, ...props }, ref) => (
+  <NavigationMenuPrimitive.Indicator
+    ref={ref}
+    className={twMerge(
+      clsx(
+        'top-full z-[1] flex h-1.5 items-end justify-center overflow-hidden data-[state=visible]:animate-in data-[state=hidden]:animate-out data-[state=hidden]:fade-out data-[state=visible]:fade-in',
+        className,
+      ),
+    )}
+    {...props}
+  >
+    <div
+      className={'relative top-[60%] h-2 w-2 rotate-45 rounded-tl-sm shadow-md'}
+    />
+  </NavigationMenuPrimitive.Indicator>
+));
+NavigationMenuIndicator.displayName =
+  NavigationMenuPrimitive.Indicator.displayName;
+
+export {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  navigationMenuTriggerStyle,
+  NavigationMenuViewport,
+};`;
+const navigationmenuUsageCode = `import {
+  NavigationMenu,
+  NavigationMenuContent,
+  NavigationMenuIndicator,
+  NavigationMenuItem,
+  NavigationMenuLink,
+  NavigationMenuList,
+  NavigationMenuTrigger,
+  NavigationMenuViewport,
+} from "../components/ui/navigation-menu"
+`;
+const navigationmenuUsageTwoCode = `<NavigationMenu>
+  <NavigationMenuList>
+    <NavigationMenuItem>
+      <NavigationMenuTrigger>Item One</NavigationMenuTrigger>
+      <NavigationMenuContent>
+        <NavigationMenuLink>Link</NavigationMenuLink>
+      </NavigationMenuContent>
+    </NavigationMenuItem>
+  </NavigationMenuList>
+</NavigationMenu>
+`;
+export {
+  navigationmenuSecondStepCode,
+  navigationmenuUsageCode,
+  navigationmenuUsageTwoCode,
+};
+
+// popover code
+
+const popoverCode = `import { Input } from '../components/input';
+import { Popover, PopoverContent, PopoverTrigger } from '../components/popover';
+import { Button } from '../components/button';
+
+export function Example() {
+  return (
+      <Popover>
+        <PopoverTrigger>
+          <Button variant={'outline'}>Open Popover</Button>
+        </PopoverTrigger>
+        <PopoverContent>
+          <div className="flex flex-col gap-4">
+            <div className="flex flex-col gap-1">
+              <span className="text-base font-medium">Dimensions</span>
+              <span className="text-sm text-type-500">
+                Set the dimensions for the layer.
+              </span>
+            </div>
+            <div className="flex flex-col gap-2 text-sm">
+              <div className="flex gap-[1.125rem] items-center">
+                <span className="w-[4.75rem]">Width</span>
+                <Input defaultValue={'100%'} className="w-[194px] h-9" />
+              </div>
+              <div className="flex gap-[1.125rem] items-center">
+                <span className="w-[4.75rem]">Max. width</span>
+                <Input defaultValue={'300px'} className="w-[194px] h-9" />
+              </div>
+              <div className="flex gap-[1.125rem] items-center">
+                <span className="w-[4.75rem]">height</span>
+                <Input defaultValue={'25px'} className="w-[194px] h-9" />
+              </div>
+              <div className="flex gap-[1.125rem] items-center">
+                <span className="w-[4.75rem]">
+                  Max. <br /> Height
+                </span>
+                <Input defaultValue={'none'} className="w-[194px] h-9" />
+              </div>
+            </div>
+          </div>
+        </PopoverContent>
+      </Popover>)
+}`;
+const popoverSecondStepCode = `import * as PopoverPrimitive from '@radix-ui/react-popover';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const PopoverTrigger = PopoverPrimitive.Trigger;
+
+const PopoverContent = React.forwardRef<
+  React.ElementRef<typeof PopoverPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof PopoverPrimitive.Content>
+>(({ className, align = 'center', sideOffset = 4, ...props }, ref) => (
+  <PopoverPrimitive.Portal>
+    <PopoverPrimitive.Content
+      ref={ref}
+      align={align}
+      sideOffset={sideOffset}
+      className={twMerge(
+        clsx(
+          'border mt-3 border-stroke-200 rounded-lg squircle ml-1.5 bg-container-50 p-4 text-type-950 shadow-md',
+          className,
+        ),
+      )}
+      {...props}
+    />
+  </PopoverPrimitive.Portal>
+));
+PopoverContent.displayName = PopoverPrimitive.Content.displayName;
+
+const Popover = PopoverPrimitive.Root;
+
+export { PopoverContent, PopoverTrigger, Popover };
+`;
+const popoverusageCode = `import {
+  Popover,
+  PopoverContent,
+  PopoverTrigger,
+  } from "@/components/popover"
+`;
+const popoverUsageCodeTwo = `<Popover>
+    <PopoverTrigger>Open</PopoverTrigger>
+    <PopoverContent>Place content for the popover here.</PopoverContent>
+  </Popover>`;
+export {
+  popoverCode,
+  popoverSecondStepCode,
+  popoverUsageCodeTwo,
+  popoverusageCode,
+};
+
+// progress code
+
+const progressCode = `import { Progress } from '../components/progress';
+export function Example() {
+  return (
+    <Progress value={30} className="w-[23.75rem]" />
+  )
+}`;
+const progressUsageCode = `import {
+  Progress
+} from "@/components/progress"
+`;
+const progressUsageTwoCode = `<Progress value={30} className="w-[23.75rem]" />
+`;
+export { progressCode, progressUsageCode, progressUsageTwoCode };
+
+// radioo group
+
+const radiogroupCode = `import { RadioGroup, RadioGroupItem } from '../components/radio-group';
+
+function Test() {
+  return (   <RadioGroup defaultValue="option-one">
+        <div className="flex flex-col p-4 rounded-lg gap-2 border w-[225px]">
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="option-one" id="option-one" />
+            <Label htmlFor="option-one">Default</Label>
+          </div>
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="option-two" id="option-two" />
+            <Label htmlFor="option-two">Comfortable</Label>
+          </div>
+          <div className="flex items-center space-x-2">
+            <RadioGroupItem value="option-three" id="option-two" />
+            <Label htmlFor="option-three">Compact</Label>
+          </div>
+        </div>
+      </RadioGroup>
+  )
+}
+`;
+const radiogroupTwoCode = `import { RadioGroup, RadioGroupItem } from '../components/radio-group';
+
+function Test() {
+  return (
+    <RadioGroup defaultValue="option-one">
+        <div className="flex flex-col gap-3 border rounded-lg items-start p-4 w-[225px]">
+          <span className="text-sm font-medium">Notify me about...</span>
+          <div className="flex flex-col gap-2 font-normal">
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="option-one" id="option-one" />
+              <Label htmlFor="option-one">Default</Label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="option-two" id="option-two" />
+              <Label htmlFor="option-two">Comfortable</Label>
+            </div>
+            <div className="flex items-center space-x-2">
+              <RadioGroupItem value="option-three" id="option-two" />
+              <Label htmlFor="option-three">Compact</Label>
+            </div>
+          </div>
+          <Button>Submit</Button>
+        </div>
+      </RadioGroup>
+  )
+}`;
+const radiogroupSecondStepCode = `import * as RadioGroupPrimitive from '@radix-ui/react-radio-group';
+import { IconCircle } from '@tabler/icons-react';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const RadioGroupItem = React.forwardRef<
+  React.ElementRef<typeof RadioGroupPrimitive.Item>,
+  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Item>
+>(({ className, ...props }, ref) => {
+  return (
+    <RadioGroupPrimitive.Item
+      ref={ref}
+      className={twMerge(
+        clsx(
+          'size-4 rounded-full data-[state=unchecked]:border data-[state=checked]:bg-accent-800 disabled:opacity-50',
+          className,
+        ),
+      )}
+      {...props}
+    >
+      <RadioGroupPrimitive.Indicator className="flex justify-center">
+        <IconCircle className="size-2 fill-current text-type-50" />
+      </RadioGroupPrimitive.Indicator>
+    </RadioGroupPrimitive.Item>
+  );
+});
+RadioGroupItem.displayName = RadioGroupPrimitive.Item.displayName;
+
+const RadioGroup = React.forwardRef<
+  React.ElementRef<typeof RadioGroupPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof RadioGroupPrimitive.Root>
+>(({ className, ...props }, ref) => {
+  return (
+    <RadioGroupPrimitive.Root
+      className={twMerge(clsx('grid gap-2', className))}
+      {...props}
+      ref={ref}
+    />
+  );
+});
+RadioGroup.displayName = RadioGroupPrimitive.Root.displayName;
+
+export { RadioGroupItem, RadioGroup };
+`;
+const radiogroupUsageCode = `import { RadioGroup, RadioGroupItem } from '../components/radio-group';`;
+const radiogroupUsageCodeTwo = `<RadioGroup defaultValue="option-one">
+    <div className="flex items-center space-x-2">
+      <RadioGroupItem value="option-one" id="option-one" />
+      <Label htmlFor="option-one">Option One</Label>
+    </div>
+    <div className="flex items-center space-x-2">
+      <RadioGroupItem value="option-two" id="option-two" />
+      <Label htmlFor="option-two">Option Two</Label>
+    </div>
+  </RadioGroup>`;
+export {
+  radiogroupCode,
+  radiogroupSecondStepCode,
+  radiogroupTwoCode,
+  radiogroupUsageCode,
+  radiogroupUsageCodeTwo,
+};
+
+// resizable code
+
+const resizableSecondStepCode = `import { IconGripVertical } from '@tabler/icons-react';
+import clsx from 'clsx';
+import React from 'react';
+import * as ResizablePrimitive from 'react-resizable-panels';
+import { twMerge } from 'tailwind-merge';
+
+interface ResizableHandleProps
+  extends React.ComponentProps<typeof ResizablePrimitive.PanelResizeHandle> {
+  withHandle?: boolean;
+}
+
+const ResizablePanel = ResizablePrimitive.Panel;
+
+const ResizableHandle: React.FC<ResizableHandleProps> = ({
+  withHandle,
+  className,
+  ...props
+}) => (
+  <ResizablePrimitive.PanelResizeHandle
+    className={twMerge(
+      clsx(
+        'flex w-px items-center justify-center bg-stroke-200 data-[panel-group-direction=vertical]:h-px data-[panel-group-direction=vertical]:w-full',
+        className,
+      ),
+    )}
+    {...props}
+  >
+    {withHandle && (
+      <div className="z-10 flex h-4 w-3.5 squircle items-center justify-center rounded border bg-border">
+        <IconGripVertical />
+      </div>
+    )}
+  </ResizablePrimitive.PanelResizeHandle>
+);
+
+const ResizablePanelGroup: React.FC<
+  React.ComponentProps<typeof ResizablePrimitive.PanelGroup>
+> = ({ className, ...props }) => (
+  <ResizablePrimitive.PanelGroup
+    className={twMerge(
+      clsx(
+        'flex h-full w-full text-type-950 data-[panel-group-direction=vertical]:flex-col',
+        className,
+      ),
+    )}
+    {...props}
+  />
+);
+
+export {
+  type ResizableHandleProps,
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+};
+`;
+const resizableUsageCode = `import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "@/components/ui/resizable"
+`;
+
+const resizableUsageCodeTwo = `<ResizablePanelGroup direction="horizontal">
+  <ResizablePanel>One</ResizablePanel>
+  <ResizableHandle />
+  <ResizablePanel>Two</ResizablePanel>
+</ResizablePanelGroup>
+`;
+export { resizableSecondStepCode, resizableUsageCode, resizableUsageCodeTwo };
+
+// scroll-area code
+
+const scrollareaCode = `import { ScrollArea } from '../components/scroll-area';
+
+function ScrollAreaPage() {
+  const tags = Array.from({ length: 11 }).map(
+  (_, i, a) => 'v1.2.0-beta.' + (a.length - i)
+);
+
+  return (
+     <ScrollArea className="border w-[14rem]">
+        <div className="pr-1.5 h-[9.625rem] space-y-2">
+          <h4 className="text-sm pt-3 font-medium text-type-950 pl-4 flex items-center">
+            Tags
+          </h4>
+          <div className="pl-1">
+            {tags.map((tag) => (
+              <>
+                <div
+                  key={tag}
+                  className="text-sm hover:bg-container-100 px-3 py-2 rounded-lg squircle"
+                >
+                  {tag}
+                </div>
+              </>
+            ))}
+          </div>
+        </div>
+      </ScrollArea>
+  );
+}
+`;
+
+const scrollareSecondStepCode = `import * as ScrollAreaPrimitive from '@radix-ui/react-scroll-area';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const ScrollBar = React.forwardRef<
+  React.ElementRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>,
+  React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.ScrollAreaScrollbar>
+>(({ className, orientation = 'vertical', ...props }, ref) => (
+  <ScrollAreaPrimitive.ScrollAreaScrollbar
+    ref={ref}
+    orientation={orientation}
+    className={twMerge(
+      clsx(
+        'flex touch-none select-none transition-colors',
+        orientation === 'vertical' &&
+          'h-full w-1.5 border-l border-l-transparent pt-[4px]',
+        orientation === 'horizontal' &&
+          'h-2.5 flex-col border-t border-r-transparent p-[1px]',
+        className,
+      ),
+    )}
+    {...props}
+  >
+    <ScrollAreaPrimitive.ScrollAreaThumb className="relative w-1.5 right-1 flex-1 rounded-full bg-container-200" />
+  </ScrollAreaPrimitive.ScrollAreaScrollbar>
+));
+ScrollBar.displayName = ScrollAreaPrimitive.ScrollAreaScrollbar.displayName;
+
+const ScrollArea = React.forwardRef<
+  React.ElementRef<typeof ScrollAreaPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof ScrollAreaPrimitive.Root>
+>(({ className, children, ...props }, ref) => (
+  <ScrollAreaPrimitive.Root
+    ref={ref}
+    className={twMerge(
+      clsx(
+        'relative overflow-hidden squircle text-type-950 pl-0.5 pr-2',
+        className,
+      ),
+    )}
+    {...props}
+  >
+    <ScrollAreaPrimitive.Viewport className="h-full w-full">
+      {children}
+    </ScrollAreaPrimitive.Viewport>
+    <ScrollBar />
+  </ScrollAreaPrimitive.Root>
+));
+ScrollArea.displayName = ScrollAreaPrimitive.Root.displayName;
+
+export { ScrollArea, ScrollBar };
+`;
+const scrollareaUsageCode = `import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from "@/components/ui/resizable"
+`;
+const scrollareaUsageTwoCode = `<ResizablePanelGroup direction="horizontal">
+  <ResizablePanel>One</ResizablePanel>
+  <ResizableHandle />
+  <ResizablePanel>Two</ResizablePanel>
+</ResizablePanelGroup>
+`;
+export {
+  scrollareSecondStepCode,
+  scrollareaCode,
+  scrollareaUsageCode,
+  scrollareaUsageTwoCode,
+};
+
+// select code
+
+const selectSecondStepCode = `import * as SelectPrimitive from '@radix-ui/react-select';
+import {
+  IconCheck,
+  IconChevronDown,
+  IconChevronUp,
+  IconSelector,
+} from '@tabler/icons-react';
+import clsx from 'clsx';
+import React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const SelectGroup = SelectPrimitive.Group;
+const SelectValue = SelectPrimitive.Value;
+
+const SelectTrigger = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.Trigger>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Trigger>
+>(({ className, children, ...props }, ref) => (
+  <SelectPrimitive.Trigger
+    ref={ref}
+    className={twMerge(
+      clsx(
+        'flex w-full text-sm font-normal items-center justify-between rounded-lg squircle border border-stroke-200 bg-container-50 px-3 py-2.5  text-type-950 disabled:cursor-not-allowed disabled:opacity-50 leading-3',
+        className,
+      ),
+    )}
+    {...props}
+  >
+    {children}
+    <SelectPrimitive.Icon asChild>
+      <IconSelector className="size-4 opacity-50" />
+    </SelectPrimitive.Icon>
+  </SelectPrimitive.Trigger>
+));
+SelectTrigger.displayName = SelectPrimitive.Trigger.displayName;
+
+const SelectScrollUpButton = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.ScrollUpButton>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollUpButton>
+>(({ className, ...props }, ref) => (
+  <SelectPrimitive.ScrollUpButton
+    ref={ref}
+    className={twMerge(
+      clsx('flex text-type-950 items-center justify-center py-1'),
+      className,
+    )}
+    {...props}
+  >
+    <IconChevronUp className="size-4" />
+  </SelectPrimitive.ScrollUpButton>
+));
+SelectScrollUpButton.displayName = SelectPrimitive.ScrollUpButton.displayName;
+
+const SelectScrollDownButton = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.ScrollDownButton>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollDownButton>
+>(({ className, ...props }, ref) => (
+  <SelectPrimitive.ScrollDownButton
+    ref={ref}
+    className={twMerge(
+      clsx('flex text-type-950 items-center justify-center py-1'),
+      className,
+    )}
+    {...props}
+  >
+    <IconChevronDown className="size-4" />
+  </SelectPrimitive.ScrollDownButton>
+));
+SelectScrollDownButton.displayName =
+  SelectPrimitive.ScrollDownButton.displayName;
+
+const SelectContent = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Content>
+>(({ className, children, position = 'popper', ...props }, ref) => (
+  <SelectPrimitive.Portal>
+    <SelectPrimitive.Content
+      ref={ref}
+      className={twMerge(
+        clsx(
+          ' max-h-96 overflow-hidden rounded-lg border border-stroke-200 bg-container-50 squircle mt-1',
+          position === 'popper' &&
+            'ta-[side=bottom]:translate-y-1 data-[side=left]:-translate-x-1 data-[side=right]:translate-x-1 data-[side=top]:-translate-y-1',
+          className,
+        ),
+      )}
+      position={position}
+      {...props}
+    >
+      <SelectScrollUpButton />
+      <SelectPrimitive.Viewport
+        className={twMerge(
+          clsx(
+            'p-1',
+            position === 'popper' &&
+              'h-[var(--radix-select-trigger-height)] w-full min-w-[var(--radix-select-trigger-width)]',
+          ),
+        )}
+      >
+        {children}
+      </SelectPrimitive.Viewport>
+      <SelectScrollDownButton />
+    </SelectPrimitive.Content>
+  </SelectPrimitive.Portal>
+));
+SelectContent.displayName = SelectPrimitive.Content.displayName;
+
+const SelectLabel = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.Label>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Label>
+>(({ className, ...props }, ref) => (
+  <SelectPrimitive.Label
+    ref={ref}
+    className={twMerge(
+      clsx('py-1.5 pl-8 pr-2 text-sm font-medium text-type-950', className),
+    )}
+    {...props}
+  />
+));
+SelectLabel.displayName = SelectPrimitive.Label.displayName;
+
+const SelectItem = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.Item>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Item>
+>(({ className, children, ...props }, ref) => (
+  <SelectPrimitive.Item
+    ref={ref}
+    className={twMerge(
+      clsx(
+        'relatve flex w-full cursor-pointer items-center rounded-sm py-1.5 pl-8 pr-2 text-sm outline-none text-type-950',
+        className,
+      ),
+    )}
+    {...props}
+  >
+    <span className="absolute left-2 flex size-3.5 items-center justify-center">
+      <SelectPrimitive.ItemIndicator>
+        <IconCheck className="size-4" />
+      </SelectPrimitive.ItemIndicator>
+    </span>
+    <SelectPrimitive.ItemText>{children}</SelectPrimitive.ItemText>
+  </SelectPrimitive.Item>
+));
+SelectItem.displayName = SelectPrimitive.Item.displayName;
+
+const SelectSeparator = React.forwardRef<
+  React.ElementRef<typeof SelectPrimitive.Separator>,
+  React.ComponentPropsWithoutRef<typeof SelectPrimitive.Separator>
+>(({ className, ...props }, ref) => (
+  <SelectPrimitive.Separator
+    ref={ref}
+    className={twMerge(clsx('-mx-1 my-1 h-px', className))}
+    {...props}
+  />
+));
+SelectSeparator.displayName = SelectPrimitive.Separator.displayName;
+
+const Select = SelectPrimitive.Root;`;
+const selectUsageCode = `import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@/components/ui/select"
+`;
+const selectusageTwoCode = `<Select>
+  <SelectTrigger className="w-[180px]">
+    <SelectValue placeholder="Theme" />
+  </SelectTrigger>
+  <SelectContent>
+    <SelectItem value="light">Light</SelectItem>
+    <SelectItem value="dark">Dark</SelectItem>
+    <SelectItem value="system">System</SelectItem>
+  </SelectContent>
+</Select>
+`;
+const selectCode = `import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from '../components/select';
+
+export function Test(){
+return(
+   <Select>
+        <div className="flex flex-col gap-1">
+          <Label>Label</Label>
+          <SelectTrigger className="w-[20rem]">
+            <SelectValue placeholder="Text" />
+          </SelectTrigger>
+        </div>
+        <SelectContent>
+          <SelectItem value="light">Light</SelectItem>
+          <SelectItem value="dark">Dark</SelectItem>
+          <SelectItem value="system">System</SelectItem>
+        </SelectContent>
+  </Select>
+)
+}
+`;
+export {
+  selectCode,
+  selectSecondStepCode,
+  selectUsageCode,
+  selectusageTwoCode,
+};
+// separator code
+const separatorCode = `import {
+  Separator,
+} from '../components/separator';
+
+export function Test(){
+return(
+    <div className="flex gap-6">
+        <Separator className="w-[13.75rem]" />
+        <Separator orientation="vertical" className="h-[13.75rem]" />
+      </div>
+)
+}`;
+
+const separatorSecodnStepCode = `import * as SeparatorPrimitive from '@radix-ui/react-separator';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const Separator = React.forwardRef<
+  React.ElementRef<typeof SeparatorPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof SeparatorPrimitive.Root>
+>(
+  (
+    { className, orientation = 'horizontal', decorative = true, ...props },
+    ref,
+  ) => (
+    <SeparatorPrimitive.Root
+      ref={ref}
+      decorative={decorative}
+      orientation={orientation}
+      className={twMerge(
+        clsx(
+          'shrink-0 bg-stroke-200',
+          orientation === 'horizontal' ? 'h-px w-full' : 'h-full w-px',
+          className,
+        ),
+      )}
+      {...props}
+    />
+  ),
+);
+
+export { Separator }
+`;
+
+const separatoUsageCode = `import {
+  Separator,
+} from "../components/separator";`;
+
+const separatorUsageTwoCode = `<Separator />`;
+export {
+  separatoUsageCode,
+  separatorCode,
+  separatorSecodnStepCode,
+  separatorUsageTwoCode,
+};
+
+// slider code
+
+const sliderCode = `import { Slider } from '../components/slider'; 
+function Test(){
+  return (
+    <Slider defaultValue={[20]} />
+  )
+}
+`;
+const slidersecondStepCode = `
+import * as SliderPrimitive from '@radix-ui/react-slider';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+interface SliderProps
+  extends React.ComponentPropsWithoutRef<typeof SliderPrimitive.Root> {
+  className?: string;
+}
+const Slider = React.forwardRef<
+  React.ElementRef<typeof SliderPrimitive.Root>,
+  SliderProps
+>(({ className, ...props }, ref) => (
+  <SliderPrimitive.Root
+    ref={ref}
+    className={twMerge(clsx('relative flex w-full items-center', className))}
+    {...props}
+  >
+    <SliderPrimitive.Track className="relative p-1 w-full overflow-hidden rounded-full bg-container-100">
+      <SliderPrimitive.Range className="absolute h-full bg-accent-800 -translate-y-1/2" />
+    </SliderPrimitive.Track>
+    <SliderPrimitive.Thumb className="size-6 rounded-full border border-stroke-200 bg-container-50 focus-visible:outline-none disabled:pointer-events-none disabled:opacity-50 flex items-center justify-center">
+      <svg
+        width="10"
+        height="12"
+        viewBox="0 0 10 12"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M0 1C0 0.447715 0.447715 0 1 0C1.55228 0 2 0.447715 2 1V11C2 11.5523 1.55228 12 1 12C0.447715 12 0 11.5523 0 11V1Z"
+          fill="#E5E5E5"
+        />
+        <path
+          d="M4 1C4 0.447715 4.44772 0 5 0C5.55228 0 6 0.447715 6 1V11C6 11.5523 5.55228 12 5 12C4.44772 12 4 11.5523 4 11V1Z"
+          fill="#E5E5E5"
+        />
+        <path
+          d="M8 1C8 0.447715 8.44772 0 9 0C9.55228 0 10 0.447715 10 1V11C10 11.5523 9.55228 12 9 12C8.44772 12 8 11.5523 8 11V1Z"
+          fill="#E5E5E5"
+        />
+      </svg>
+    </SliderPrimitive.Thumb>
+  </SliderPrimitive.Root>
+));
+Slider.displayName = SliderPrimitive.Root.displayName;
+
+export { Slider, type SliderProps };
+`;
+
+const sliderUsageCode = `import { Slider } from '../components/slider';`;
+const sliderUsageTwoCode = `<Slider defaultValue={[20]} />`;
+export {
+  sliderCode,
+  sliderUsageCode,
+  sliderUsageTwoCode,
+  slidersecondStepCode,
+};
