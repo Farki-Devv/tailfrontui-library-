@@ -39,7 +39,7 @@ const Code: React.FC<CodeProps> = ({
     <div
       className={`relative bg-container-950 p-4 rounded-lg squircle text-type-50 ${className} ${
         children.length >= 300
-          ? 'bg-gradient-to-t from-container-400/40 to-container-600/10'
+          ? 'bg-gradient-to-t from-container-500/40 to-container-600/10'
           : ''
       }`}
     >
@@ -47,15 +47,14 @@ const Code: React.FC<CodeProps> = ({
       <code
         className={`flex ${
           isExpanded ? 'max-h-96 overflow-auto' : 'max-h-[11rem] overflow-auto'
-        } transition-all  `}
+        } transition-all`}
       >
         {/* children */}
         <div
-          className={`w-[94%] whitespace-pre-line font-normal text-sm  md:text-base font-code ${codeClassName}`}
+          className={`w-[94%] whitespace-pre-line font-normal text-sm md:text-base font-code ${codeClassName}`}
         >
           {children}
         </div>
-
         {/* Copy button */}
         {copied ? (
           <Check className="size-4 cursor-pointer top-4 right-4 absolute" />
@@ -65,7 +64,7 @@ const Code: React.FC<CodeProps> = ({
             onClick={copyToClipboard}
           />
         )}
-      </code>
+       </code>
 
       <div className="flex justify-center">
         {/* Expand button */}

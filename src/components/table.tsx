@@ -97,7 +97,7 @@ const TableCell = React.forwardRef<
     ref={ref}
     className={twMerge(
       clsx(
-        'md:px-4 py-3 h-auto font-normal text-type-950', // h-auto qo'shildi
+        'md:px-4 h-10 font-normal text-type-950', // h-auto qo'shildi
         className,
       ),
     )}

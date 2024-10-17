@@ -78,8 +78,8 @@ function Navbar() {
               <FiGithub className="text-type-500" />
               GitHub
             </Button>
-            <Button>
-              <span className="max-xl:flex">Get</span> Start
+            <Button onClick={() => router('/docs')}>
+              <span className="max-xl:flex">Get</span> Started
             </Button>
           </div>
           <div className="hidden max-md:flex items-center">

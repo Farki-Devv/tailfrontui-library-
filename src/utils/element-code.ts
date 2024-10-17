@@ -539,12 +539,12 @@ export { AvatarFallback, AvatarImage, Avatar };
 ;`;
 const avatarUsageCode = `import { Avatar, AvatarFallback, AvatarImage } from '../components/avatar'`;
 const avatarUsageTwoCode = `<Avatar>
-      <AvatarImage
-        src="https://avatars.githubusercontent.com/u/173272923?s=200&v=4"
-        alt="@tailfront"
-      />
-      <AvatarFallback>CN</AvatarFallback>
-    </Avatar>`;
+  <AvatarImage
+    src="https://avatars.githubusercontent.com/u/173272923?s=200&v=4"
+    alt="@tailfront"
+    />
+    AvatarFallback>CN</AvatarFallback>
+</Avatar>`;
 export {
   avatarCode,
   avatarSecondStepCode,
@@ -2940,6 +2940,111 @@ export {
 
 // resizable code
 
+const resizableCode = `import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from '../components/resizable';
+function Test() {
+  return (
+  <div className="h-[208px]">
+        <ResizablePanelGroup
+          direction="horizontal"
+          className="max-w-md h-[208px] rounded-lg border md:min-w-[450px]"
+        >
+          <ResizablePanel defaultSize={50}>
+            <ResizablePanelGroup direction="vertical">
+              <ResizablePanel defaultSize={50}>
+                <div className="flex items-center justify-center h-full">
+                  <span>One</span>
+                </div>
+              </ResizablePanel>
+              <ResizableHandle />
+              <ResizablePanel defaultSize={50}>
+                <div className="flex items-center justify-center h-full">
+                  Two
+                </div>
+              </ResizablePanel>
+            </ResizablePanelGroup>
+          </ResizablePanel>
+          <ResizableHandle />
+          <ResizablePanel defaultSize={50}>
+            <div className="flex items-center justify-center h-full">
+              <span>Three</span>
+            </div>
+          </ResizablePanel>
+        </ResizablePanelGroup>
+      </div>
+  )
+} 
+
+`;
+
+
+const resizableTwoCode = `import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from '../components/resizable';
+function Test() {
+  return (
+  <div className="h-[208px]">
+        <ResizablePanelGroup
+          direction="horizontal"
+          className="max-w-md h-[208px] rounded-lg border md:min-w-[450px]"
+        >
+          <ResizablePanel defaultSize={50}>
+            <ResizablePanelGroup direction="vertical">
+              <ResizablePanel defaultSize={25}>
+                <div className="flex items-center justify-center h-full">
+                  <span>One</span>
+                </div>
+              </ResizablePanel>
+              <ResizableHandle />
+              <ResizablePanel defaultSize={75}>
+                <div className="flex items-center justify-center h-full">
+                  Two
+                </div>
+              </ResizablePanel>
+            </ResizablePanelGroup>
+          </ResizablePanel>
+        </ResizablePanelGroup>
+      </div>
+  )
+} 
+`;
+
+
+const resizableThreeCode = `import {
+  ResizableHandle,
+  ResizablePanel,
+  ResizablePanelGroup,
+} from '../components/resizable';
+function Test() {
+  return (
+  <div className="h-[208px]">
+        <ResizablePanelGroup
+          direction="horizontal"
+          className="max-w-md h-[208px] rounded-lg border md:min-w-[450px]"
+        >
+          <ResizablePanelGroup direction="horizontal">
+            <ResizablePanel defaultSize={30}>
+              <div className="flex items-center justify-center h-full">
+                <span>Sidebar</span>
+              </div>
+            </ResizablePanel>
+            <ResizableHandle withHandle={true} />
+            <ResizablePanel defaultSize={70}>
+              <div className="flex items-center justify-center h-full">
+                Content
+              </div>
+            </ResizablePanel>
+          </ResizablePanelGroup>
+        </ResizablePanelGroup>
+  </div>
+  )
+} 
+`;
 const resizableSecondStepCode = `import { IconGripVertical } from '@tabler/icons-react';
 import clsx from 'clsx';
 import React from 'react';
@@ -3000,7 +3105,7 @@ const resizableUsageCode = `import {
   ResizableHandle,
   ResizablePanel,
   ResizablePanelGroup,
-} from "@/components/ui/resizable"
+} from "../components/resizable"
 `;
 
 const resizableUsageCodeTwo = `<ResizablePanelGroup direction="horizontal">
@@ -3009,7 +3114,7 @@ const resizableUsageCodeTwo = `<ResizablePanelGroup direction="horizontal">
   <ResizablePanel>Two</ResizablePanel>
 </ResizablePanelGroup>
 `;
-export { resizableSecondStepCode, resizableUsageCode, resizableUsageCodeTwo };
+export { resizableSecondStepCode, resizableUsageCode, resizableUsageCodeTwo , resizableCode, resizableThreeCode, resizableTwoCode};
 
 // scroll-area code
 
@@ -3452,4 +3557,1337 @@ export {
   sliderUsageCode,
   sliderUsageTwoCode,
   slidersecondStepCode,
+};
+
+// skeleton code
+const skeletonCode = `import { Skeleton } from '../components/skeleton';
+function Test(){
+  return (
+     <div className="flex items-center space-x-3">
+        <Skeleton className="size-12 rounded-full" />
+        <div className="space-y-2">
+          <Skeleton className="h-4 w-[8.75rem]" />
+          <Skeleton className="h-4 w-[8.75rem]" />
+        </div>
+     </div>
+  )
+}
+`;
+const skeletonSecondStepCode = `import clsx from 'clsx';
+import React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const Skeleton: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
+  className,
+  ...props
+}) => {
+  return (
+    <div
+      className={twMerge(
+        clsx('animate-pulse rounded-full bg-container-100', className),
+      )}
+      {...props}
+    />
+  );
+};
+
+export { Skeleton };
+`;
+
+const skeletonUsageCode = `import { Skeleton } from '../components/skeleton';`;
+const skeletonUsageTwoCode = `<Skeleton className="w-[6.25rem] h-5 rounded-full" />`;
+export {
+  skeletonCode,
+  skeletonSecondStepCode,
+  skeletonUsageCode,
+  skeletonUsageTwoCode,
+};
+
+// switch code
+
+const switchCode = `import { Switch } from '../components/switch';
+function Test(){
+  return (
+     <div className="flex flex-col gap-2">
+        <div className="flex gap-2 items-center">
+          <Switch />
+          <span>Airplane Mode</span>
+        </div>
+        <div className="flex gap-2 items-center">
+          <Switch disabled />
+          <span>Airplane Mode</span>
+        </div>
+      </div>
+  )
+}
+`;
+const switchSecondStepCode = `import * as SwitchPrimitives from '@radix-ui/react-switch';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const Switch = React.forwardRef<
+  React.ElementRef<typeof SwitchPrimitives.Root>,
+  React.ComponentPropsWithoutRef<typeof SwitchPrimitives.Root>
+>(({ className, ...props }, ref) => (
+  <SwitchPrimitives.Root
+    className={twMerge(
+      clsx(
+        'inline-flex h-5 w-9 items-center rounded-full border-2 border-transparent  focus-visible:outline-none disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-accent-800 data-[state=unchecked]:bg-container-200',
+        className,
+      ),
+    )}
+    {...props}
+    ref={ref}
+  >
+    <SwitchPrimitives.Thumb
+      className={twMerge(
+        clsx(
+          'size-4 rounded-full bg-type-50 transition-transform data-[state=checked]:translate-x-4 data-[state=unchecked]:translate-x-0',
+        ),
+      )}
+    />
+  </SwitchPrimitives.Root>
+));
+Switch.displayName = SwitchPrimitives.Root.displayName;
+
+export { Switch };`;
+const switchUsageCode = `import { Switch } from "../components/switch"`;
+const switchUsageTwoCode = `<Switch />`;
+export {
+  switchCode,
+  switchSecondStepCode,
+  switchUsageCode,
+  switchUsageTwoCode,
+};
+// tabs code
+
+const tabsCode = `import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/tabs';
+
+function Test(){
+  return (
+    <Tabs defaultValue="tabone" className="w-[25rem]">
+        <TabsList>
+          <TabsTrigger value="tabone">Tab</TabsTrigger>
+          <TabsTrigger value="tabtwo">Tab</TabsTrigger>
+        </TabsList>
+        <TabsContent value="tabone">
+          Make changes to your account here
+        </TabsContent>
+        <TabsContent value="tabtwo">Change your password here.</TabsContent>
+    </Tabs>
+  )
+}
+`;
+const tabsSecondStepCode = `import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const Table = React.forwardRef<
+  HTMLTableElement,
+  React.HTMLAttributes<HTMLTableElement>
+>(({ className, ...props }, ref) => (
+  <div className="relative w-full overflow-auto">
+    <table
+      ref={ref}
+      className={twMerge(
+        clsx(
+          'w-full caption-bottom text-sm border border-collapse border-stroke-200 bg-container-50 rounded-lg squircle',
+          className,
+        ),
+      )}
+      {...props}
+    />
+  </div>
+));
+Table.displayName = 'Table';
+
+const TableHeader = React.forwardRef<
+  HTMLTableSectionElement,
+  React.HTMLAttributes<HTMLTableSectionElement>
+>(({ className, ...props }, ref) => (
+  <thead
+    ref={ref}
+    className={twMerge(clsx('&_tr]:border-b ', className))}
+    {...props}
+  />
+));
+TableHeader.displayName = 'TableHeader';
+
+const TableBody = React.forwardRef<
+  HTMLTableSectionElement,
+  React.HTMLAttributes<HTMLTableSectionElement>
+>(({ className, ...props }, ref) => (
+  <tbody
+    ref={ref}
+    className={twMerge(clsx('[&_tr:last-child]:border-0', className))}
+    {...props}
+  />
+));
+TableBody.displayName = 'TableBody';
+
+const TableFooter = React.forwardRef<
+  HTMLTableSectionElement,
+  React.HTMLAttributes<HTMLTableSectionElement>
+>(({ className, ...props }, ref) => (
+  <tfoot
+    ref={ref}
+    className={twMerge(
+      clsx(
+        'border-t font-medium bg-container-100 -z-0 [&>tr]:last:border-b-0',
+        className,
+      ),
+    )}
+    {...props}
+  />
+));
+TableFooter.displayName = 'TableFooter';
+
+const TableRow = React.forwardRef<
+  HTMLTableRowElement,
+  React.HTMLAttributes<HTMLTableRowElement>
+>(({ className, ...props }, ref) => (
+  <tr
+    ref={ref}
+    className={twMerge(
+      clsx(
+        'border-b transition-colors hover:bg-muted/50 data-[state=selected]:bg-muted',
+        className,
+      ),
+    )}
+    {...props}
+  />
+));
+
+const TableCell = React.forwardRef<
+  HTMLTableCellElement,
+  React.TdHTMLAttributes<HTMLTableCellElement>
+>(({ className, ...props }, ref) => (
+  <td
+    ref={ref}
+    className={twMerge(
+      clsx(
+        'md:px-4 py-3 h-auto font-normal text-type-950', // h-auto qo'shildi
+        className,
+      ),
+    )}
+    {...props}
+  />
+));
+TableCell.displayName = 'TableCell';
+
+
+const TableHead = React.forwardRef<
+  HTMLTableCellElement,
+  React.ThHTMLAttributes<HTMLTableCellElement>
+>(({ className, ...props }, ref) => (
+  <th
+    ref={ref}
+    className={twMerge(
+      clsx(
+        'h-10 px-4 text-left aligin-middle font-medium text-type-950 [&:has([role=checkbox])]:pr-0',
+        className,
+      ),
+    )}
+    {...props}
+  />
+));
+TableHead.displayName = 'TableHead';
+
+
+
+const TableCaption = React.forwardRef<
+  HTMLTableCaptionElement,
+  React.HTMLAttributes<HTMLTableCaptionElement>
+>(({ className, ...props }, ref) => (
+  <caption
+    ref={ref}
+    className={twMerge(clsx('mt-4 text-sm text-muted-foreground', className))}
+    {...props}
+  />
+));
+TableCaption.displayName = 'TableCaption';
+
+export {
+  Table,
+  TableBody,
+  TableCaption,
+  TableCell,
+  TableFooter,
+  TableHead,
+  TableHeader,
+  TableRow,
+};
+`;
+
+const tabsUsageCode = `import { Tabs, TabsContent, TabsList, TabsTrigger } from "../components/tabs"
+`;
+const tabsUsageTwoCode = `<Tabs defaultValue="tabone" >
+  <TabsList>
+    <TabsTrigger value="tabone">Tab</TabsTrigger>
+    <TabsTrigger value="tabtwo">Tabs</TabsTrigger>
+  </TabsList>
+  <TabsContent value="tabone">Make changes to your account here.</TabsContent>
+  <TabsContent value="tabtwo">Change your password here.</TabsContent>
+</Tabs>
+`;
+const tabsTwoCode = `import { Tabs, TabsContent, TabsList, TabsTrigger } from '../components/tabs';
+
+export fucntion Test() {
+  return (
+      <Tabs defaultValue="tabone" className="w-[25rem]">
+        <TabsList>
+          <TabsTrigger value="tabone">Tab</TabsTrigger>
+          <TabsTrigger value="tabtwo">Tab</TabsTrigger>
+          <TabsTrigger value="tabthree">Tab</TabsTrigger>
+          <TabsTrigger value="tabfour">Tab</TabsTrigger>
+        </TabsList>
+        <TabsContent value="tabone">
+          Make changes to your account here
+        </TabsContent>
+        <TabsContent value="tabtwo">Change your password here.</TabsContent>
+        <TabsContent value="tabthree">
+          Make changes to your account here
+        </TabsContent>
+        <TabsContent value="tabfour">Change your password here.</TabsContent>
+      </Tabs>
+  );
+}
+`;
+export {
+  tabsCode,
+  tabsSecondStepCode,
+  tabsTwoCode,
+  tabsUsageCode,
+  tabsUsageTwoCode,
+};
+
+// textarea code
+
+const textareaCode = `import { Textarea } from '../components/textarea';
+
+function Test(){
+  return (
+     <div className="w-[17.5rem] h-[4.5rem]">
+        <Label className="text-sm h-5">Label</Label>
+        <Textarea placeholder="Text" />
+      </div>
+  )
+}
+`;
+const textareaSecondStepCode = `import clsx from 'clsx';
+import React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+interface TextareaProps
+  extends React.TextareaHTMLAttributes<HTMLTextAreaElement> {}
+
+const Textarea = React.forwardRef<HTMLTextAreaElement, TextareaProps>(
+  ({ className, ...props }, ref) => {
+    return (
+      <textarea
+        rows={3}
+        className={twMerge(
+          clsx(
+            'flex w-full rounded-lg border border-stroke-200 bg-container-50 px-3 text-type-950 text-sm placeholder:text-type-400 pt-2 pb-1 focus-visible:outline-none focus-visible:ring-4 focus:ring-accent-100 disabled:cursor-not-allowed disabled:opacity-50',
+            className,
+          ),
+        )}
+        ref={ref}
+        {...props}
+      />
+    );
+  },
+);
+export { type TextareaProps, Textarea };
+`;
+
+const textareaUsageCode = `import { Textarea } from '../components/textarea';`;
+const textareUsageTwoCode = `<Textarea />`;
+const textareaTwoCode = `import { Textarea } from '../components/textarea';
+
+export function Test() {
+  return (
+    <div className="w-[17.5rem] h-[4.5rem]">
+        <Label className="text-sm h-5">Your message</Label>
+        <Textarea placeholder="Enter your message" />
+        <span className="text-xs text-type-400">
+          Your message will be copied to the support team.
+        </span>
+      </div>
+  );
+}
+`;
+export {
+  textareUsageTwoCode,
+  textareaCode,
+  textareaSecondStepCode,
+  textareaTwoCode,
+  textareaUsageCode,
+};
+
+// toggle code
+
+const toggleCode = `import { Toggle } from '../components/toggle';
+
+function Test(){
+  return (
+    <Toggle aria-label="Toggle bold">
+        <IconBold className="h-4 w-4 text-type-500" />
+      </Toggle>
+  )
+`;
+
+const toggleSecondStepCode = `import * as TooglePrimitive from '@radix-ui/react-toggle';
+import { cva, VariantProps } from 'class-variance-authority';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const toggleVariants = cva(
+  'data-[state=on]:bg-container-100 squircle rounded-lg',
+  {
+    variants: {
+      variant: {
+        default: 'bg-none',
+        outline: 'border border-stroke-200',
+      },
+      size: {
+        default: 'size-9 px-2.5 py-2.5',
+      },
+    },
+    defaultVariants: {
+      variant: 'default',
+      size: 'default',
+    },
+  },
+);
+
+const Toggle = React.forwardRef<
+  React.ElementRef<typeof TooglePrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof TooglePrimitive.Root> &
+    VariantProps<typeof toggleVariants>
+>(({ className, variant, size, ...props }, ref) => (
+  <TooglePrimitive.Root
+    ref={ref}
+    className={twMerge(clsx(toggleVariants({ variant, size }), className))}
+    {...props}
+  />
+));
+Toggle.displayName = TooglePrimitive.Root.displayName;
+
+export { toggleVariants, Toggle };
+`;
+
+const toggleUsageCode = `import { Toggle } from "../components/toggle"
+`;
+const toggleUsageTwoCode = `<Toggle>Toggle</Toggle>
+`;
+export {
+  toggleCode,
+  toggleSecondStepCode,
+  toggleUsageCode,
+  toggleUsageTwoCode,
+};
+
+// toggle-group code
+
+const toggleGroupCode = `import { ToggleGroup, ToggleGroupItem } from '../components/toggle-group';
+
+function Test(){
+  return (
+  <div className="flex flex-col gap-6">
+        <ToggleGroup type="single">
+          <ToggleGroupItem value="a">A</ToggleGroupItem>
+          <ToggleGroupItem value="b">B</ToggleGroupItem>
+          <ToggleGroupItem value="c">C</ToggleGroupItem>
+        </ToggleGroup>
+
+        <ToggleGroup type="single">
+          <ToggleGroupItem variant={'outline'} value="a">
+            A
+          </ToggleGroupItem>
+          <ToggleGroupItem variant={'outline'} value="b">
+            B
+          </ToggleGroupItem>
+          <ToggleGroupItem variant={'outline'} value="c">
+            C
+          </ToggleGroupItem>
+        </ToggleGroup>
+      </div>
+  )
+}
+`;
+const toggleGroupSecondStepCode = `i
+import * as ToggleGroupPrimitive from '@radix-ui/react-toggle-group';
+import { type VariantProps } from 'class-variance-authority';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+import { toggleVariants } from './toggle';
+
+const ToggleGroupContext = React.createContext<
+  VariantProps<typeof toggleVariants>
+>({
+  size: 'default',
+  variant: 'default',
+});
+
+const ToggleGroupItem = React.forwardRef<
+  React.ElementRef<typeof ToggleGroupPrimitive.Item>,
+  React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Item> &
+    VariantProps<typeof toggleVariants>
+>(({ className, children, variant, size, ...props }, ref) => {
+  const context = React.useContext(ToggleGroupContext);
+  return (
+    <ToggleGroupPrimitive.Item
+      ref={ref}
+      className={twMerge(
+        clsx(
+          toggleVariants({
+            variant: context.variant || variant,
+            size: context.size || size,
+          }),
+          className,
+        ),
+      )}
+      {...props}
+    >
+      {children}
+    </ToggleGroupPrimitive.Item>
+  );
+});
+
+ToggleGroupItem.displayName = ToggleGroupPrimitive.Item.displayName;
+
+const ToggleGroup = React.forwardRef<
+  React.ElementRef<typeof ToggleGroupPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof ToggleGroupPrimitive.Root> &
+    VariantProps<typeof toggleVariants>
+>(({ className, variant, size, children, ...props }, ref) => (
+  <ToggleGroupPrimitive.Root
+    ref={ref}
+    className={twMerge(
+      clsx('flex items-center justify-center gap-1', className),
+    )}
+    {...props}
+  >
+    <ToggleGroupContext.Provider value={{ variant, size }}>
+      {children}
+    </ToggleGroupContext.Provider>
+  </ToggleGroupPrimitive.Root>
+));
+ToggleGroup.displayName = ToggleGroupPrimitive.Root.displayName;
+
+export { ToggleGroupItem, ToggleGroup };
+`;
+const toggleGroupUsageCode = `import { ToggleGroup, ToggleGroupItem } from "../components/toggle-group"`;
+const toggleGroupUsageTwoCode = `<ToggleGroup type="single">
+  <ToggleGroupItem value="a">A</ToggleGroupItem>
+  <ToggleGroupItem value="b">B</ToggleGroupItem>
+  <ToggleGroupItem value="c">C</ToggleGroupItem>
+</ToggleGroup>
+`;
+export {
+  toggleGroupCode,
+  toggleGroupSecondStepCode,
+  toggleGroupUsageCode,
+  toggleGroupUsageTwoCode,
+};
+
+// tooltip code
+
+const tooltipCode = `import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from '../components/tooltip';
+
+function Test(){
+  return (
+    <TooltipProvider>
+        <Tooltip>
+          <TooltipTrigger className="bg-container-950 text-type-50 px-2 py-1 rounded-xl text-xs">
+            Label
+          </TooltipTrigger>
+          <TooltipContent>
+            <p>Add to library</p>
+          </TooltipContent>
+        </Tooltip>
+      </TooltipProvider>
+  )
+}
+`;
+const tooltipSecondStepCode = `import * as TooltipPrimitive from '@radix-ui/react-tooltip';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+const Tooltip = TooltipPrimitive.Root;
+
+const TooltipTrigger = TooltipPrimitive.Trigger;
+
+const TooltipContent = React.forwardRef<
+  React.ElementRef<typeof TooltipPrimitive.Content>,
+  React.ComponentPropsWithoutRef<typeof TooltipPrimitive.Content>
+>(({ className, sideOffset = 4, ...props }, ref) => (
+  <TooltipPrimitive.Content
+    ref={ref}
+    sideOffset={sideOffset}
+    className={twMerge(
+      clsx(
+        'overflow-hidden rounded-md squircle border bg-container-50 px-3 py-1.5 text-sm text-type-950',
+        className,
+      ),
+    )}
+    {...props}
+  />
+));
+TooltipContent.displayName = TooltipPrimitive.Content.displayName;
+
+const TooltipProvider = TooltipPrimitive.Provider;
+
+export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger };
+`;
+const tooltipUsageCode = `import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip"
+`;
+const tooltipUsageTwoCode = `<TooltipProvider>
+  <Tooltip>
+    <TooltipTrigger>Hover</TooltipTrigger>
+    <TooltipContent>
+      <p>Add to library</p>
+    </TooltipContent>
+  </Tooltip>
+</TooltipProvider>
+`;
+export {
+  tooltipCode,
+  tooltipSecondStepCode,
+  tooltipUsageCode,
+  tooltipUsageTwoCode,
+};
+// toast code
+
+const toastCode = `import { Button } from '../components/button';
+import { useToast } from '../components/use-toast';
+
+function Test(){
+const { toast } = useToast();
+return(
+  <Button
+        onClick={() => {
+          toast({
+            title: 'Title',
+            description: 'Subtitle',
+            action: (
+              <Button variant={'outline'} className="w-[55px] h-8 text-xs">
+                Button
+              </Button>
+            ),
+          });
+        }}
+      >
+        Show Toast
+  </Button>
+)
+}
+`;
+
+const toastSecondStepCode = `import * as ToastPrimitive from '@radix-ui/react-toast';
+import { IconX } from '@tabler/icons-react';
+import { cva, VariantProps } from 'class-variance-authority';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+type ToastProps = React.ComponentPropsWithoutRef<typeof Toast>;
+
+type ToastActionElement = React.ReactElement<typeof ToastAction>;
+
+const toastVariants = cva(
+  'group pointer-events-auto relative flex w-full items-center justif-center justify-between space-x-4 overflow-hidden border rounded-md px-2 py-2 ',
+  {
+    variants: {
+      variant: {
+        default: 'bg-container-50 text-type-950',
+        destructive: 'border-red-100 bg-red-50 text-red-800',
+      },
+    },
+    defaultVariants: {
+      variant: 'default',
+    },
+  },
+);
+
+const ToastProvider = ToastPrimitive.Provider;
+
+const ToastViewport = React.forwardRef<
+  React.ElementRef<typeof ToastPrimitive.ToastViewport>,
+  React.ComponentPropsWithoutRef<typeof ToastPrimitive.ToastViewport>
+>(({ className, ...props }, ref) => (
+  <ToastPrimitive.Viewport
+    ref={ref}
+    className={twMerge(
+      'fixed top-0 flex max-h-screen flex-col p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col',
+      className,
+    )}
+    {...props}
+  />
+));
+ToastViewport.displayName = ToastPrimitive.ToastViewport.displayName;
+
+const ToastAction = React.forwardRef<
+  React.ElementRef<typeof ToastPrimitive.Action>,
+  React.ComponentPropsWithoutRef<typeof ToastPrimitive.Action>
+>(({ className, ...props }, ref) => (
+  <ToastPrimitive.Action
+    ref={ref}
+    {...props}
+    className={twMerge(
+      clsx(
+        'inline-flex items-center justify-center rounded-lg border px-3 text-sm font-medium',
+        className,
+      ),
+    )}
+  />
+));
+ToastAction.displayName = ToastPrimitive.Action.displayName;
+
+const ToastClose = React.forwardRef<
+  React.ElementRef<typeof ToastPrimitive.Close>,
+  React.ComponentPropsWithoutRef<typeof ToastPrimitive.Close>
+>(({ className, ...props }, ref) => (
+  <ToastPrimitive.Close
+    ref={ref}
+    className={twMerge(
+      clsx(
+        'absolute right-1.5 top-0.5 rounded-md p-1 opacity-0 group-hover:opacity-100',
+        className,
+      ),
+    )}
+    {...props}
+  >
+    <IconX className="size-4 text-type-400" />
+  </ToastPrimitive.Close>
+));
+ToastClose.displayName = ToastPrimitive.Close.displayName;
+
+const ToastTitle = React.forwardRef<
+  React.ElementRef<typeof ToastPrimitive.Title>,
+  React.ComponentPropsWithoutRef<typeof ToastPrimitive.Title>
+>(({ className, ...props }, ref) => (
+  <ToastPrimitive.Title
+    ref={ref}
+    className={twMerge('text-sm font-medium font-sans', className)}
+    {...props}
+  />
+));
+ToastTitle.displayName = ToastPrimitive.Title.displayName;
+
+const ToastDescription = React.forwardRef<
+  React.ElementRef<typeof ToastPrimitive.Description>,
+  React.ComponentPropsWithoutRef<typeof ToastPrimitive.Description>
+>(({ className, ...props }, ref) => (
+  <ToastPrimitive.Description
+    ref={ref}
+    className={twMerge(clsx('text-xs opacity-50 font-normal', className))}
+    {...props}
+  />
+));
+ToastDescription.displayName = ToastPrimitive.Description.displayName;
+
+const Toast = React.forwardRef<
+  React.ElementRef<typeof ToastPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof ToastPrimitive.Root> &
+    VariantProps<typeof toastVariants>
+>(({ className, variant, ...props }, ref) => {
+  return (
+    <ToastPrimitive.Root
+      ref={ref}
+      className={twMerge(clsx(toastVariants({ variant }), className))}
+      {...props}
+    />
+  );
+});
+Toast.displayName = ToastPrimitive.Root.displayName;
+
+export {
+  type ToastActionElement,
+  type ToastProps,
+  ToastAction,
+  ToastClose,
+  ToastDescription,
+  ToastProvider,
+  ToastTitle,
+  ToastViewport,
+  Toast,
+};`;
+const toastThirdStepCode = `import {
+  Toast,
+  ToastClose,
+  ToastDescription,
+  ToastProvider,
+  ToastTitle,
+  ToastViewport,
+} from '../components/toast';
+import { useToast } from './use-toast';
+
+const Toaster = (): JSX.Element => {
+  const { toasts } = useToast();
+  return (
+    <ToastProvider>
+      {toasts.map(({ id, title, description, action, ...props }) => {
+        return (
+          <Toast
+            key={id}
+            {...props}
+             className=\`py-2 \${description ? '' : 'h-[48px]'}\`
+          >
+            <div className={'grid w-[213px] h-12 p-1 gap-1 items-center'}>
+              {title && <ToastTitle>{title}</ToastTitle>}
+              {description && (
+                <ToastDescription>{description}</ToastDescription>
+              )}
+            </div>
+
+            <div className="flex w-[75px] h-[48px] gap-1 items-center">
+              {action}
+              <ToastClose />
+            </div>
+          </Toast>
+        );
+      })}
+      <ToastViewport />
+    </ToastProvider>
+  );
+};
+
+export { Toaster };
+`;
+
+const toastFourthStepCode = `// Inspired by react-hot-toast library
+import * as React from 'react';
+import { ToastActionElement } from '../components/toast';
+import { ToastProps } from './toast';
+
+const TOAST_LIMIT = 1;
+const TOAST_REMOVE_DELAY = 1000000;
+
+type ToasterToast = ToastProps & {
+  id: string;
+  title?: React.ReactNode;
+  description?: React.ReactNode;
+  action?: ToastActionElement;
+};
+
+const actionTypes = {
+  ADD_TOAST: 'ADD_TOAST',
+  UPDATE_TOAST: 'UPDATE_TOAST',
+  DISMISS_TOAST: 'DISMISS_TOAST',
+  REMOVE_TOAST: 'REMOVE_TOAST',
+} as const;
+
+let count = 0;
+
+const genId = (): string => {
+  count = (count + 1) % Number.MAX_SAFE_INTEGER;
+  return count.toString();
+};
+
+type ActionType = typeof actionTypes;
+
+type Action =
+  | {
+      type: ActionType['ADD_TOAST'];
+      toast: ToasterToast;
+    }
+  | {
+      type: ActionType['UPDATE_TOAST'];
+      toast: Partial<ToasterToast>;
+    }
+  | {
+      type: ActionType['DISMISS_TOAST'];
+      toastId?: ToasterToast['id'];
+    }
+  | {
+      type: ActionType['REMOVE_TOAST'];
+      toastId?: ToasterToast['id'];
+    };
+
+interface State {
+  toasts: ToasterToast[];
+}
+
+const toastTimeouts = new Map<string, ReturnType<typeof setTimeout>>();
+
+const addToRemoveQueue = (toastId: string): void => {
+  if (toastTimeouts.has(toastId)) {
+    return;
+  }
+
+  const timeout = setTimeout(() => {
+    toastTimeouts.delete(toastId);
+    dispatch({
+      type: 'REMOVE_TOAST',
+      toastId: toastId,
+    });
+  }, TOAST_REMOVE_DELAY);
+
+  toastTimeouts.set(toastId, timeout);
+};
+
+export const reducer = (state: State, action: Action): State => {
+  switch (action.type) {
+    case 'ADD_TOAST':
+      return {
+        ...state,
+        toasts: [action.toast, ...state.toasts].slice(0, TOAST_LIMIT),
+      };
+
+    case 'UPDATE_TOAST':
+      return {
+        ...state,
+        toasts: state.toasts.map((t) =>
+          t.id === action.toast.id ? { ...t, ...action.toast } : t,
+        ),
+      };
+
+    case 'DISMISS_TOAST': {
+      const { toastId } = action;
+
+      // ! Side effects ! - This could be extracted into a dismissToast() action,
+      // but I'll keep it here for simplicity
+      if (toastId) {
+        addToRemoveQueue(toastId);
+      } else {
+        state.toasts.forEach((toast) => {
+          addToRemoveQueue(toast.id);
+        });
+      }
+
+      return {
+        ...state,
+        toasts: state.toasts.map((t) =>
+          t.id === toastId || toastId === undefined
+            ? {
+                ...t,
+                open: false,
+              }
+            : t,
+        ),
+      };
+    }
+    case 'REMOVE_TOAST':
+      if (action.toastId === undefined) {
+        return {
+          ...state,
+          toasts: [],
+        };
+      }
+      return {
+        ...state,
+        toasts: state.toasts.filter((t) => t.id !== action.toastId),
+      };
+  }
+};
+
+const listeners: Array<(state: State) => void> = [];
+
+let memoryState: State = { toasts: [] };
+
+const dispatch = (action: Action): void => {
+  memoryState = reducer(memoryState, action);
+  listeners.forEach((listener) => {
+    listener(memoryState);
+  });
+};
+
+type Toast = Omit<ToasterToast, 'id'>;
+
+const toast = ({ ...props }: Toast): Toast => {
+  const id = genId();
+
+  const update = (props: ToasterToast): void =>
+    dispatch({
+      type: 'UPDATE_TOAST',
+      toast: { ...props, id },
+    });
+  const dismiss = (): void => dispatch({ type: 'DISMISS_TOAST', toastId: id });
+
+  dispatch({
+    type: 'ADD_TOAST',
+    toast: {
+      ...props,
+      id,
+      open: true,
+      onOpenChange: (open) => {
+        if (!open) dismiss();
+      },
+    },
+  });
+
+  return {
+    id: id,
+    dismiss,
+    update,
+  };
+};
+
+interface UseToastReturnType extends State {
+  toast: ({ ...props }: Toast) => {
+    id: string;
+    dismiss: () => void;
+    update: (props: ToasterToast) => void;
+  };
+  dismiss: (toastId?: string) => void;
+  toasts: ToasterToast[];
+}
+
+const useToast = (): UseToastReturnType => {
+  const [state, setState] = React.useState<State>(memoryState);
+
+  React.useEffect(() => {
+    listeners.push(setState);
+    return (): void => {
+      const index = listeners.indexOf(setState);
+      if (index > -1) {
+        listeners.splice(index, 1);
+      }
+    };
+  }, [state]);
+
+  return {
+    ...state,
+    toast,
+    dismiss: (toastId?: string) => dispatch({ type: 'DISMISS_TOAST', toastId }),
+  };
+};
+
+export { toast, useToast };
+`;
+const toastUsageCode = `import { toast } from '@hooks/use-toast';`;
+const toastUsageTwoCode = `export const ToastDemo = () => {
+  const { toast } = useToast()
+
+  return (
+    <Button
+      onClick={() => {
+        toast({
+          title: "Scheduled: Catch up",
+          description: "Friday, February 10, 2023 at 5:57 PM",
+        })
+      }}
+    >
+      Show Toast
+    </Button>
+  )
+}
+`;
+const toastFiverthStepCode = `import { Toaster } from "@/components/ui/toaster"
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="en">
+      <head />
+      <body>
+        <main>{children}</main>
+        <Toaster />
+      </body>
+    </html>
+  )
+}
+`;
+const toastTwoCode = `import { Button } from '../components/button';
+import { useToast } from '../components/use-toast';
+
+function Test(){
+const { toast } = useToast();
+return(
+ <Button
+        variant={'destructive'}
+        onClick={() => {
+          toast({
+            title: 'Title',
+            description: 'Subtitle',
+            variant: 'destructive',
+            action: (
+              <Button
+                variant={'destructive'}
+                className="w-[3.438rem] h-8 text-xs"
+              >
+                Button
+              </Button>
+            ),
+          });
+        }}
+      >
+        Show Toast
+  </Button>
+)
+}`;
+export {
+  toastCode,
+  toastFiverthStepCode,
+  toastFourthStepCode,
+  toastSecondStepCode,
+  toastThirdStepCode,
+  toastTwoCode,
+  toastUsageCode,
+  toastUsageTwoCode,
+};
+
+// sheet code
+
+const sheetCode = `import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '../components/sheet';
+
+function Example() {
+  return (
+   <Sheet>
+        <SheetTrigger>
+          <Button>Open</Button>
+        </SheetTrigger>
+        <SheetContent className="flex flex-col gap-4">
+          <SheetHeader>
+            <SheetTitle>Edit profile</SheetTitle>
+            <SheetDescription>
+              Make changes to your profile here. Click save when you're done.
+            </SheetDescription>
+          </SheetHeader>
+          <Separator />
+          <div className="flex flex-col gap-1">
+            <span className="text-sm">Name</span>
+            <Input className="h-9" defaultValue={'Komol Kuchkarov'} />
+          </div>
+          <div className="flex flex-col gap-1">
+            <span className="text-sm">Username</span>
+            <Input className="h-9" defaultValue="@kuhckarov" />
+          </div>
+          <Button className="ml-auto">Save Changes</Button>
+        </SheetContent>
+      </Sheet>
+  );
+}
+`;
+const sheetSecondStepCode = `import * as SheetPrimitive from '@radix-ui/react-dialog';
+import { IconX } from '@tabler/icons-react';
+import { cva, type VariantProps } from 'class-variance-authority';
+import clsx from 'clsx';
+import * as React from 'react';
+import { twMerge } from 'tailwind-merge';
+
+interface SheetContentProps
+  extends React.ComponentPropsWithoutRef<typeof SheetPrimitive.Content>,
+    VariantProps<typeof sheetVariants> {}
+
+const sheetVariants = cva(
+  'fixed z-50 gap-4 bg-container-50 p-6 shadow-lg rounded-lg squircle',
+  {
+    variants: {
+      side: {
+        top: 'inset-x-0 top-0 data-[state=closed]:slide-out-to-top data-[state=open]:slide-in-from-top',
+        bottom:
+          'inset-x-0 bottom-0 data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom',
+        left: 'inset-y-0 left-0 h-full w-3/4 data-[state=closed]:slide-out-to-left data-[state=open]:slide-in-from-left sm:max-w-sm',
+        right:
+          'inset-y-2 p-6 right-0 w-80 data-[state=closed]:slide-out-to-right data-[state=open]:slide-in-from-right sm:max-w-sm',
+      },
+    },
+    defaultVariants: {
+      side: 'right',
+    },
+  },
+);
+
+const SheetTrigger = SheetPrimitive.Trigger;
+
+const SheetClose = SheetPrimitive.Close;
+
+const SheetPortal = SheetPrimitive.Portal;
+
+const SheetOverlay = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Overlay>,
+  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Overlay>
+>(({ className, ...props }, ref) => (
+  <SheetPrimitive.Overlay
+    className={twMerge(
+      clsx('fixed inset-0 z-50 bg-container-950/20', className),
+    )}
+    {...props}
+    ref={ref}
+  />
+));
+SheetOverlay.displayName = SheetPrimitive.Overlay.displayName;
+
+const SheetContent = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Content>,
+  SheetContentProps
+>(({ side = 'right', className, children, ...props }, ref) => (
+  <SheetPortal>
+    <SheetOverlay />
+    <SheetPrimitive.Content
+      ref={ref}
+      className={twMerge(clsx(sheetVariants({ side }), className))}
+      {...props}
+    >
+      {children}
+      <SheetPrimitive.Close className="absolute right-6 top-6 rounded-sm oopacity-70 text-type-950">
+        <IconX className="size-5" />
+      </SheetPrimitive.Close>
+    </SheetPrimitive.Content>
+  </SheetPortal>
+));
+SheetContent.displayName = SheetPrimitive.Content.displayName;
+
+const SheetHeader: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
+  className,
+  ...props
+}) => (
+  <div
+    className={twMerge(
+      clsx('flex flex-col w-60 space-y-1 text-center sm:text-left', className),
+      className,
+    )}
+    {...props}
+  />
+);
+SheetHeader.displayName = 'SheetHeader';
+
+const SheetFooter: React.FC<React.HTMLAttributes<HTMLDivElement>> = ({
+  className,
+  ...props
+}) => (
+  <div
+    className={twMerge(
+      clsx(
+        'flex flex-col-reverse sm:flex-row sm:justify-end sm:space-x-2',
+        className,
+      ),
+    )}
+    {...props}
+  />
+);
+SheetFooter.displayName = 'SheetFooter';
+
+const SheetTitle = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Title>,
+  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Title>
+>(({ className, ...props }, ref) => (
+  <SheetPrimitive.Title
+    ref={ref}
+    className={twMerge(clsx('text-base font-medium text-type-950', className))}
+    {...props}
+  />
+));
+SheetTitle.displayName = SheetPrimitive.Title.displayName;
+
+const SheetDescription = React.forwardRef<
+  React.ElementRef<typeof SheetPrimitive.Description>,
+  React.ComponentPropsWithoutRef<typeof SheetPrimitive.Description>
+>(({ className, ...props }, ref) => (
+  <SheetPrimitive.Description
+    ref={ref}
+    className={twMerge(clsx('text-sm text-type-500', className))}
+    {...props}
+  />
+));
+SheetDescription.displayName = SheetPrimitive.Description.displayName;
+
+const Sheet = SheetPrimitive.Root;
+
+export {
+  Sheet,
+  SheetClose,
+  SheetContent,
+  SheetDescription,
+  SheetFooter,
+  SheetHeader,
+  SheetOverlay,
+  SheetPortal,
+  SheetTitle,
+  SheetTrigger,
+};`;
+
+const sheetUsageCode = `import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from "@/components/ui/sheet"
+`;
+const sheetUsageTwoCode = `<Sheet>
+  <SheetTrigger>Open</SheetTrigger>
+  <SheetContent>
+    <SheetHeader>
+      <SheetTitle>Are you absolutely sure?</SheetTitle>
+      <SheetDescription>
+        This action cannot be undone. This will permanently delete your account
+        and remove your data from our servers.
+      </SheetDescription>
+    </SheetHeader>
+  </SheetContent>
+</Sheet>
+`;
+
+const sheetTwoCode = `import {
+  Sheet,
+  SheetContent,
+  SheetDescription,
+  SheetHeader,
+  SheetTitle,
+  SheetTrigger,
+} from '../components/sheet';
+
+ interface sheetSide extends ExampleProps {
+  side: 'top' | 'bottom' | 'left' | 'right' | null | undefined;
+}
+
+function Example({side}: sheetSide) {
+  return (
+    <Sheet>
+        <SheetTrigger>
+          <Button>{side}</Button>
+        </SheetTrigger>
+        <SheetContent side={side} className="flex flex-col gap-4">
+          <SheetHeader>
+            <SheetTitle>Edit profile</SheetTitle>
+            <SheetDescription>
+              Make changes to your profile here. Click save when you're done.
+            </SheetDescription>
+          </SheetHeader>
+          <Separator />
+          <div className="flex flex-col gap-1">
+            <span className="text-sm">Name</span>
+            <Input className="h-9" defaultValue={'Komol Kuchkarov'} />
+          </div>
+          <div className="flex flex-col gap-1">
+            <span className="text-sm">Username</span>
+            <Input className="h-9" defaultValue="@kuhckarov" />
+          </div>
+          <Button className="ml-auto">Save Changes</Button>
+        </SheetContent>
+      </Sheet>
+  );
+}
+`;
+export {
+  sheetCode,
+  sheetSecondStepCode,
+  sheetTwoCode,
+  sheetUsageCode,
+  sheetUsageTwoCode,
 };

@@ -97,7 +97,7 @@ const SheetContent = React.forwardRef<
       {...props}
     >
       {children}
-      <SheetPrimitive.Close className="absolute right-6 top-2 rounded-sm oopacity-70 text-type-950">
+      <SheetPrimitive.Close className="absolute right-6 top-6 rounded-sm oopacity-70 text-type-950">
         <IconX className="size-5" />
       </SheetPrimitive.Close>
     </SheetPrimitive.Content>

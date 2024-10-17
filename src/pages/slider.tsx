@@ -43,7 +43,7 @@ function SliderPage() {
           </div>
           {/* Installation CLI */}
           <TabsContent value="cli">
-            <Code>npm install tailfront@latest elements Slider</Code>
+            <Code>npm install tailfront@latest elements slider</Code>
           </TabsContent>
           {/* Installation Manual */}
           <TabsContent value="manual" className="w-full">
@@ -54,7 +54,7 @@ function SliderPage() {
                 description="Please add these required dependencies:"
                 className="pb-8"
               >
-                <Code>npm install tailfront@latest elements Slider</Code>
+                <Code>npm install tailfront@latest elements slider</Code>
               </ElementSteps>
               {/* Second step */}
               <ElementSteps

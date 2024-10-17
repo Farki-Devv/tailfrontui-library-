@@ -18,7 +18,7 @@
  * @npm i clsx
  * @npm i tailwind-merge
  * @npm i class-variance-authority
- * @npx i tailfront elements toggle
+ * @npx tailfront elements toggle
  * @npm i @radix-ui/react-toggle-group
  */
 
@@ -82,4 +82,4 @@ const ToggleGroup = React.forwardRef<
 ));
 ToggleGroup.displayName = ToggleGroupPrimitive.Root.displayName;
 
-export { ToggleGroupItem, ToggleGroup };
+export { ToggleGroup, ToggleGroupItem };

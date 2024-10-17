@@ -1,4 +1,3 @@
-import { Tabs } from '@radix-ui/react-tabs';
 import { createBrowserRouter, Outlet } from 'react-router-dom';
 import AccordionPage from './pages/accordion';
 import Alert from './pages/alert';
@@ -43,15 +42,24 @@ import Skeleton from './pages/skeleton';
 import Slider from './pages/slider';
 import Switch from './pages/switch';
 import Table from './pages/table';
+import TabsPage from './pages/tabs';
 import TextStyles from './pages/text-styles';
 import Textarea from './pages/textarea';
 import Toast from './pages/toast';
 import Toggle from './pages/toggle';
+import ToggleGroupPage from './pages/toggle-group';
 import Tooltip from './pages/tooltip';
 import Navbar from './shared/navbar';
 import Saidbar from './shared/saidbar';
 
+import { useLocation } from 'react-router-dom';
+
 const Layout = () => {
+  const location = useLocation(); // Hozirgi sahifa yo‘nalishini olish
+  const hideSidebarPaths = ['/']; // Bu yo'llarda sidebar ko'rinmasin
+
+  const shouldShowSidebar = !hideSidebarPaths.includes(location.pathname);
+
   return (
     <div>
       {/* Navbar */}
@@ -62,20 +70,23 @@ const Layout = () => {
       {/* Content */}
       <div className="flex">
         {/* Saidbar left */}
-        <div className="mt-10 max-md:hidden">
-          <Saidbar />
-        </div>
-
-        <div>
-          {/* Outlet for content */}
-          <div className="mt-10 md:ml-10">
-            <Outlet />
+        {shouldShowSidebar && (
+          <div className="mt-10 max-md:hidden">
+            <Saidbar />
           </div>
+        )}
+
+        {/* Outlet for content */}
+        <div className={`mt-10 ${shouldShowSidebar ? 'md:ml-10' : ''}`}>
+          <Outlet />
         </div>
       </div>
+      
     </div>
   );
 };
+
+export default Layout;
 
 const router = createBrowserRouter([
   {
@@ -268,7 +279,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/components/tabs',
-        element: <Tabs />,
+        element: <TabsPage />,
       },
       {
         path: '/components/textarea',
@@ -284,7 +295,7 @@ const router = createBrowserRouter([
       },
       {
         path: '/components/toggle-group',
-        element: <Carousel />,
+        element: <ToggleGroupPage />,
       },
       {
         path: '/components/tooltip',
