@@ -9,11 +9,11 @@ import { Card } from '../components/card';
 function Home() {
   const router = useNavigate();
   return (
-    <div className="mt-16 flex flex-col gap-16">
+    <div className="mt-6 flex flex-col gap-16">
       <div className="flex flex-col gap-6 items-start">
-        <div className="px-2 py-1 border border-accent-800 rounded-lg text-xs text-accent-800">
+        <span className="px-2 p-0.5 text-xs border rounded-lg border-accent-800 text-accent-800 font-medium ">
           ★ 1.3k stars on Github
-        </div>
+        </span>
         <div className="flex flex-col gap-2">
           <span className="text-5xl text-type-950 font-semibold">
             Start Building with Tailfront
@@ -25,8 +25,18 @@ function Home() {
           </span>
         </div>
         <div className="flex gap-2">
-          <Button onClick={() => router('/docs')}>Get Started</Button>
-          <Button variant={'outline'} className="tracking-wide">
+          <Button
+            onClick={() => router('/docs')}
+            size={'lg'}
+            className="tracking-normal"
+          >
+            Get Started
+          </Button>
+          <Button
+            variant={'outline'}
+            size={'lg'}
+            className="tracking-wide flex gap-1.5"
+          >
             <FiGithub className="text-type-500" />
             GitHub
           </Button>

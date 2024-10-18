@@ -20,7 +20,7 @@ const saidbarThemesLinks = [
   },
   {
     name: 'Effects',
-    path: 'themes/effects',
+    path: '/themes/effects',
   },
   {
     name: 'Text Styles',

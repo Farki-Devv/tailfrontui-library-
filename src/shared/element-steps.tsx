@@ -15,9 +15,9 @@ function ElementSteps({
   className,
 }: ElementStepsProps) {
   return (
-    <div className={`flex gap-3 ${className}`}>
+    <div className={`flex gap-1 md:gap-3 ${className}`}>
       <div className="flex flex-col items-center gap-1">
-        <span className="px-4 flex items-center justify-center size-9 text-base bg-container-100 rounded-full aspect-square">
+        <span className="px-4 flex items-center justify-center max-md:size-8 md:size-9 text-base bg-container-100 rounded-full aspect-square">
           {step}
         </span>
         <Separator orientation="vertical" />

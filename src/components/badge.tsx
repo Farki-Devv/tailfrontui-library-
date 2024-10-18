@@ -28,9 +28,10 @@ const badgeVariants = cva(
   {
     variants: {
       variant: {
-        default:     'bg-accent-800 text-type-50',
-        secondary:   'bg-container-100 text-type-950',
-        outline:     'bg-container-50 border border-stroke-200 box-border text-type-950',
+        default: 'bg-accent-800 text-type-50',
+        secondary: 'bg-container-100 text-type-950',
+        outline:
+          'bg-container-50 border border-stroke-200 box-border text-type-950',
         destructive: 'bg-red-800 text-type-50',
       },
     },
@@ -49,4 +50,4 @@ const Badge: React.FC<BadgeProps> = ({ className, variant, ...props }) => {
   );
 };
 
-export { type BadgeProps, badgeVariants, Badge };
+export { Badge, badgeVariants, type BadgeProps };

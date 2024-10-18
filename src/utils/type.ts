@@ -3,4 +3,5 @@ export interface ExampleProps {
   description?: string;
   padding?: string;
   size?: 'lg' | 'sm';
+  variantAlert?: 'default' | 'destructive';
 }

@@ -21,7 +21,6 @@ import DropdownMenu from './pages/dropdown-menu';
 import Effects from './pages/effects';
 import Figma from './pages/figma';
 import Form from './pages/form';
-import GettingStarted from './pages/getting-started';
 import Home from './pages/home';
 import HoverCard from './pages/hover-card';
 import IconLibrary from './pages/icon-library';
@@ -53,6 +52,8 @@ import Navbar from './shared/navbar';
 import Saidbar from './shared/saidbar';
 
 import { useLocation } from 'react-router-dom';
+import Blog from './pages/blog';
+import Themes from './pages/themes';
 
 const Layout = () => {
   const location = useLocation(); // Hozirgi sahifa yo‘nalishini olish
@@ -81,7 +82,6 @@ const Layout = () => {
           <Outlet />
         </div>
       </div>
-      
     </div>
   );
 };
@@ -102,11 +102,6 @@ const router = createBrowserRouter([
         element: <Documentation />,
       },
       // Getting started
-
-      {
-        path: '/docs/getting-started',
-        element: <GettingStarted />,
-      },
       {
         path: '/docs/figma',
         element: <Figma />,
@@ -117,7 +112,11 @@ const router = createBrowserRouter([
       },
       // Themes
       {
-        path: '/themes/colors',
+        path: '/themes',
+        element: <Themes />,
+      },
+      {
+        path: 'themes/colors',
         element: <Colors />,
       },
       {
@@ -132,7 +131,16 @@ const router = createBrowserRouter([
         path: '/themes/icons-library',
         element: <IconLibrary />,
       },
+      // Blog
+      {
+        path: '/blog',
+        element: <Blog />,
+      },
       // components
+      {
+        path: '/components',
+        element: <AccordionPage />,
+      },
       {
         path: '/components/accordion',
         element: <AccordionPage />,

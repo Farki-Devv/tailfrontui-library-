@@ -27,7 +27,7 @@ import React from 'react';
 import { twMerge } from 'tailwind-merge';
 
 const alertVariants = cva(
-  'relative w-full rounded-lg border border-stroke-200 px-4 py-3 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-1px] [&>svg]:absolute [&>svg]:left-3.5 [&>svg]:top-3.5 [&>svg]:text-foreground',
+  'relative w-full rounded-lg border border-stroke-200 px-4 py-3 [&>svg~*]:pl-7 [&>svg+div]:translate-y-[-1px] [&>svg]:absolute [&>svg]:left-3.5 [&>svg]:top-3.5 [&>svg]:text-foreground',  
   {
     variants: {
       variant: {

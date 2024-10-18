@@ -32,7 +32,7 @@ function AlertPage() {
         name="Alert"
         description="Displays a callout for user attention."
       >
-        <Example variant="default" />
+        <Example variantAlert="default" />
       </ElementsName>
       {/* Installation */}
       <Div>
@@ -111,7 +111,7 @@ function AlertPage() {
           header="Default"
           description="Use the size prop to control size of the dialog. It will affect the padding and border-radius of the Content."
           size="sm"
-          variant={'destructive'}
+          variantAlert={'destructive'}
         />
       </ElementsExample>
       <NavigationButtons />
@@ -126,7 +126,8 @@ const Example = ({
   description,
   padding,
   size,
-  variant,
+
+  variantAlert,
 }: ExampleProps) => {
   return (
     <ElementsExampleTabs
@@ -136,11 +137,11 @@ const Example = ({
       padding={padding}
       elementCode={alertCode}
     >
-      <Alert className="md:w-[532px]" variant={variant}>
+      <Alert className="md:w-[532px]" variant={variantAlert}>
         <Circle className="h-4 w-4" />
         <AlertTitle>Title</AlertTitle>
         <AlertDescription
-          className={`${variant == 'default' ? `text-type-500` : 'text-red-800'}`}
+          className={`${variantAlert == 'default' ? `text-type-500` : 'text-red-800'}`}
         >
           The leaves danced gently in the breeze, their rustling a symphony of
           nature’s.

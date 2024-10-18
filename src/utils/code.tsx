@@ -51,7 +51,7 @@ const Code: React.FC<CodeProps> = ({
       >
         {/* children */}
         <div
-          className={`w-[94%] whitespace-pre-line font-normal text-sm md:text-base font-code ${codeClassName}`}
+          className={`md:w-[94%] whitespace-pre-line font-normal text-sm md:text-base font-code ${codeClassName} overflow-x-auto`}
         >
           {children}
         </div>

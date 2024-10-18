@@ -2,11 +2,12 @@
  * @file navbar.tsx
  * @overview Displays a navbar.
  */
+import { useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa6';
 import { FiGithub } from 'react-icons/fi';
 import { useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '../components/button';
-import { Input } from '../components/input';
+import GlobalSearch from '../utils/lib';
 import Logo from './logo';
 import MobileSaidbar from './mobile-saidbar';
 // Navbar elements
@@ -32,6 +33,17 @@ function Navbar() {
   const router = useNavigate();
   const location = useLocation();
   const active = String(location.pathname);
+  useEffect(() => {
+    if (active === '/components') {
+      router('/components/accordion');
+    }
+  }, [active, router]);
+
+  useEffect(() => {
+    if (active === '/themes') {
+      router('/themes/colors');
+    }
+  }, [active, router]);
   return (
     <>
       <div className="flex justify-between items-center h-[84px]">
@@ -64,15 +76,7 @@ function Navbar() {
 
         {/* Search bar and buttons */}
         <div className="flex gap-2 items-center max-md:w-full">
-          <div className="relative w-full ml-1">
-            <Input
-              placeholder="Type keywords..."
-              className="w-full md:w-[17.5rem] pr-[3rem] max-md:h-8"
-            />
-            <div className="border absolute rounded-lg text-xs px-1 py-0.5 text-type-500 right-3 top-2 max-md:top-1.5 border-stroke-200">
-              ⌘ K
-            </div>
-          </div>
+          <GlobalSearch />
           <div className="grid grid-cols-2 w-full gap-2 items-center max-lg:hidden">
             <Button variant={'outline'} className="tracking-wide">
               <FiGithub className="text-type-500" />
