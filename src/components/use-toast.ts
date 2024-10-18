@@ -137,7 +137,13 @@ const dispatch = (action: Action): void => {
 
 type Toast = Omit<ToasterToast, 'id'>;
 
-const toast = ({ ...props }: Toast): Toast => {
+const toast = ({
+  ...props
+}: Toast): {
+  id: string;
+  dismiss: () => void;
+  update: (props: ToasterToast) => void;
+} => {
   const id = genId();
 
   const update = (props: ToasterToast): void =>
