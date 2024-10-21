@@ -31,7 +31,7 @@ const Code: React.FC<CodeProps> = ({
         }, 2000);
       })
       .catch((error) => {
-        console.error('Failed to copy: ', error);
+        console.error('Failed to copy:', error);
       });
   };
 
@@ -47,37 +47,47 @@ const Code: React.FC<CodeProps> = ({
       <code
         className={`flex ${
           isExpanded ? 'max-h-96 overflow-auto' : 'max-h-[11rem] overflow-auto'
-        } transition-all`}
+        } transition-all hide-scrollbar`}
       >
         {/* children */}
         <div
-          className={`md:w-[94%] whitespace-pre-line font-normal text-sm md:text-base font-code ${codeClassName} overflow-x-auto`}
+          className={`md:w-[94%] whitespace-pre-line font-normal text-sm md:text-base font-code ${codeClassName} overflow-x-auto hide-scrollbar`}
         >
           {children}
         </div>
         {/* Copy button */}
         {copied ? (
-          <Check className="size-4 cursor-pointer top-4 right-4 absolute" />
+          <Check className="size-5 cursor-pointer top-4 right-4 absolute" />
         ) : (
           <Copy
-            className="size-4 cursor-pointer top-4 right-4 absolute"
+            className="size-5 cursor-pointer top-4 right-4 absolute"
             onClick={copyToClipboard}
           />
         )}
-       </code>
+      </code>
 
       <div className="flex justify-center">
         {/* Expand button */}
         {!isExpanded && children.length > 400 && (
-          <Button variant={'secondary'} onClick={toggleExpand} size={'lg'}>
+          <Button
+            variant={'secondary'}
+            onClick={toggleExpand}
+            size={'lg'}
+            className="m-0 mx-2"
+          >
             Expand
           </Button>
         )}
 
         {/* Collapse button */}
         {isExpanded && (
-          <Button variant={'secondary'} onClick={toggleExpand} size={'lg'}>
-            Collapsile
+          <Button
+            variant={'secondary'}
+            onClick={toggleExpand}
+            size={'lg'}
+            className="m-0 mx-2"
+          >
+            Collapse
           </Button>
         )}
       </div>

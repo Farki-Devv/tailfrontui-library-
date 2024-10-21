@@ -61,30 +61,30 @@ const saidbarElementsLinks = [
     name: 'Button',
     path: '/components/button',
   },
-  {
-    name: 'Calendar',
-    path: '/components/calendar',
-  },
+  // {
+  //   name: 'Calendar',
+  //   path: '/components/calendar',
+  // },
   {
     name: 'Card',
     path: '/components/card',
   },
-  {
-    name: 'Carousel',
-    path: '/components/carousel',
-  },
+  // {
+  //   name: 'Carousel',
+  //   path: '/components/carousel',
+  // },
   {
     name: 'Checkbox',
     path: '/components/checkbox',
   },
-  {
-    name: 'Data Table',
-    path: '/components/data-table',
-  },
-  {
-    name: 'Data Picker',
-    path: '/components/data-picker',
-  },
+  // {
+  //   name: 'Data Table',
+  //   path: '/components/data-table',
+  // },
+  // {
+  //   name: 'Data Picker',
+  //   path: '/components/data-picker',
+  // },
   {
     name: 'Dialog',
     path: '/components/dialog',
@@ -117,14 +117,14 @@ const saidbarElementsLinks = [
     name: 'Label',
     path: '/components/label',
   },
-  {
-    name: 'Navigation Menu',
-    path: '/components/navigation-menu',
-  },
-  {
-    name: 'Pagination',
-    path: '/components/pagination',
-  },
+  // {
+  //   name: 'Navigation Menu',
+  //   path: '/components/navigation-menu',
+  // },
+  // {
+  //   name: 'Pagination',
+  //   path: '/components/pagination',
+  // },
   {
     name: 'Popover',
     path: '/components/popover',
@@ -169,10 +169,10 @@ const saidbarElementsLinks = [
     name: 'Switch',
     path: '/components/switch',
   },
-  {
-    name: 'Table',
-    path: '/components/table',
-  },
+  // {
+  //   name: 'Table',
+  //   path: '/components/table',
+  // },
   {
     name: 'Tabs',
     path: '/components/tabs',

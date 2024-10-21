@@ -33,7 +33,7 @@ const toggleVariants = cva(
         outline: 'border border-stroke-200',
       },
       size: {
-        default: 'size-9 px-2.5 py-2.5',
+        default: 'size-9 px-2.5 py-2.5 ',
       },
     },
     defaultVariants: {

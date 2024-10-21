@@ -40,7 +40,7 @@ function BreadcrumbPageList() {
         name="Breadcrumb"
         description="Specifies the path to the current resource using the connection hierarchy. install the component and use it in sequence"
       >
-        <Example padding="p-[10px]" />
+        <Example />
       </ElementsName>
       {/* Installation */}
       <Div>

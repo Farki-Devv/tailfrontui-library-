@@ -7,7 +7,7 @@ interface ElementName {
 }
 function ElementsName({ name, description, children }: ElementName) {
   return (
-    <div className="flex flex-col gap-4 w-full">
+    <div className="flex flex-col w-full">
       <div className="flex flex-col gap-2">
         <ElementHeader>{name}</ElementHeader>
         {/* Element description */}

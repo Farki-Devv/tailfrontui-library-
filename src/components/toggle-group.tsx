@@ -47,6 +47,7 @@ const ToggleGroupItem = React.forwardRef<
       ref={ref}
       className={twMerge(
         clsx(
+          'flex items-center justify-center',
           toggleVariants({
             variant: context.variant || variant,
             size: context.size || size,

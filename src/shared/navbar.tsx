@@ -5,7 +5,7 @@
 import { useEffect } from 'react';
 import { FaGithub } from 'react-icons/fa6';
 import { FiGithub } from 'react-icons/fi';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { NavLink, useLocation, useNavigate } from 'react-router-dom';
 import { Button } from '../components/button';
 import GlobalSearch from '../utils/lib';
 import Logo from './logo';
@@ -79,9 +79,16 @@ function Navbar() {
           <GlobalSearch />
           <div className="grid grid-cols-2 w-full gap-2 items-center max-lg:hidden">
             <Button variant={'outline'} className="tracking-wide">
-              <FiGithub className="text-type-500" />
-              GitHub
+              <NavLink
+                to={'https://github.com/tailfront'}
+                target={'_blank'}
+                className={'flex items-center gap-1'}
+              >
+                <FiGithub className="text-type-500" />
+                GitHub
+              </NavLink>
             </Button>
+
             <Button onClick={() => router('/docs')}>
               <span className="max-xl:flex">Get</span> Started
             </Button>

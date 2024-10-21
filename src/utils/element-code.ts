@@ -2980,7 +2980,6 @@ function Test() {
 
 `;
 
-
 const resizableTwoCode = `import {
   ResizableHandle,
   ResizablePanel,
@@ -3013,7 +3012,6 @@ function Test() {
   )
 } 
 `;
-
 
 const resizableThreeCode = `import {
   ResizableHandle,
@@ -3114,7 +3112,14 @@ const resizableUsageCodeTwo = `<ResizablePanelGroup direction="horizontal">
   <ResizablePanel>Two</ResizablePanel>
 </ResizablePanelGroup>
 `;
-export { resizableSecondStepCode, resizableUsageCode, resizableUsageCodeTwo , resizableCode, resizableThreeCode, resizableTwoCode};
+export {
+  resizableCode,
+  resizableSecondStepCode,
+  resizableThreeCode,
+  resizableTwoCode,
+  resizableUsageCode,
+  resizableUsageCodeTwo,
+};
 
 // scroll-area code
 
@@ -4890,4 +4895,56 @@ export {
   sheetTwoCode,
   sheetUsageCode,
   sheetUsageTwoCode,
+};
+
+// checkbox code
+
+const chexboxCode = `import { Checkbox } from '../components/checkbox';
+
+export function Test() {
+  return (
+    <div className="flex gap-2 items-center">
+      <Checkbox />
+      <span className="text-sm">Accept terms and conditions</span>
+    </div>
+  );
+}
+`;
+const checkboxSecondStepCode = `import * as CheckboxPrimitive from '@radix-ui/react-checkbox';
+import clsx from 'clsx';
+import { Check } from 'lucide-react';
+import React from 'react';
+import { twMerge } from 'tailwind-merge';
+const Checkbox = React.forwardRef<
+  React.ElementRef<typeof CheckboxPrimitive.Root>,
+  React.ComponentPropsWithoutRef<typeof CheckboxPrimitive.Root>
+>(({ className, ...props }, ref) => (
+  <CheckboxPrimitive.Root
+    ref={ref}
+    className={twMerge(
+      clsx(
+        'peer size-4 shrink-0 rounded-[4px] border border-stroke-200 bg-container-50  disabled:cursor-not-allowed disabled:opacity-50 data-[state=checked]:bg-accent-800 data-[state=checked]:border-none data-[state=checked]:text-type-50',
+        className,
+      ),
+    )}
+    {...props}
+  >
+    <CheckboxPrimitive.Indicator
+      className={twMerge(clsx('flex items-center justify-center text-current'))}
+    >
+      <Check className="size-3" />
+    </CheckboxPrimitive.Indicator>
+  </CheckboxPrimitive.Root>
+));
+Checkbox.displayName = CheckboxPrimitive.Root.displayName;
+
+export { Checkbox };`;
+
+const checkboxUsageCode = `import { Checkbox } from '..//components/checkbox';`;
+const checkboxUsageTwoCode = `<Checkbox />`;
+export {
+  checkboxSecondStepCode,
+  checkboxUsageCode,
+  checkboxUsageTwoCode,
+  chexboxCode,
 };

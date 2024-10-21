@@ -4,3 +4,12 @@
 @tailwind components;
 @tailwind utilities;
 
+.hide-scrollbar {
+  /* Webkit asosida */
+  -ms-overflow-style: none; /* Internet Explorer va eski Edge */
+  scrollbar-width: none; /* Firefox */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari va Opera */
+}

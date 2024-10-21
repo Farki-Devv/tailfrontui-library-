@@ -46,7 +46,7 @@ const GLobalSearch = () => {
           <div className="relative w-full ml-1">
             <Input
               placeholder="Type keywords..."
-              className="w-full md:w-[17.5rem] pr-[3rem] max-md:h-8 cursor-pointer"
+              className="w-[300px] md:w-[17.5rem] pr-[3rem] max-md:h-8 cursor-pointer"
             />
             <div className="border absolute rounded-lg text-xs px-1 py-0.5 text-type-500 right-3 top-2 max-md:top-1.5 border-stroke-200">
               ⌘ K

@@ -1,6 +1,6 @@
 import { CiLocationOn } from 'react-icons/ci';
 import { FiGithub } from 'react-icons/fi';
-import { useNavigate } from 'react-router-dom';
+import { NavLink, useNavigate } from 'react-router-dom';
 import logo from '../assets/homeavatar.png';
 import { Alert } from '../components/alert';
 import { Badge } from '../components/badge';
@@ -11,7 +11,7 @@ function Home() {
   return (
     <div className="mt-6 flex flex-col gap-16">
       <div className="flex flex-col gap-6 items-start">
-        <span className="px-2 p-0.5 text-xs border rounded-lg border-accent-800 text-accent-800 font-medium ">
+        <span className="px-2 p-0.5 text-xs border rounded-lg border-accent-800 text-accent-800 font-medium">
           ★ 1.3k stars on Github
         </span>
         <div className="flex flex-col gap-2">
@@ -32,18 +32,20 @@ function Home() {
           >
             Get Started
           </Button>
-          <Button
-            variant={'outline'}
-            size={'lg'}
-            className="tracking-wide flex gap-1.5"
-          >
-            <FiGithub className="text-type-500" />
-            GitHub
+          <Button variant={'outline'} className="tracking-wide" size={'lg'}>
+            <NavLink
+              to={'https://github.com/tailfront'}
+              target={'_blank'}
+              className={'flex items-center gap-1'}
+            >
+              <FiGithub className="text-type-500" />
+              GitHub
+            </NavLink>
           </Button>
         </div>
       </div>
       <div className="flex max-lg:flex-col gap-5 items-start">
-        <Card className="max-w-[540px] p-6 flex flex-col gap-2">
+        <Card className="max-w-[33.75rem] p-6 flex flex-col gap-2">
           <div className="flex flex-col gap-1">
             <span className="text-xl font-medium">Delete Item?</span>
             <span className="text-sm text-type-500">
@@ -57,7 +59,7 @@ function Home() {
           </div>
         </Card>
         <Alert className="max-w-[40rem] flex gap-3 p-6">
-          <img src={logo} alt="" className="size-12" />
+          <img src={logo} alt="logo" className="size-12" />
           <div className="flex flex-col gap-3">
             <div className="flex flex-col gap-1">
               <span className="text-base text-type-950">Farrukh Ganiboev</span>

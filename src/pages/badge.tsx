@@ -30,7 +30,7 @@ function BadgePage() {
         name="Badge"
         description="A collection of vertically arranged interactive headers, each of which reveals a piece of content. Check it out by Example"
       >
-        <Example padding="p-[10px]" variant={'default'} />
+        <Example variant={'default'} />
       </ElementsName>
       {/* Installation */}
       <Div>

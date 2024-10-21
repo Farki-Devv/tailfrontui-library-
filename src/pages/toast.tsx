@@ -180,7 +180,7 @@ const ExampleTwo = ({ header, description, padding, size }: ExampleProps) => {
         onClick={() => {
           toast({
             title: 'Title',
-            description: 'Subtitle',
+
             variant: 'destructive',
             action: (
               <Button

@@ -43,7 +43,7 @@ const HoverCardContent = React.forwardRef<
     sideOffset={sideOffset}
     className={twMerge(
       clsx(
-        'z-50 mt-3 rounded-lg squircle shadow-md border bg-container-50 p-4 text-type-950 ml-1',
+        'z-50 mt-3 rounded-lg squircle shadow-md border bg-container-50 p-4 text-type-950 ml-2.5',
         className,
       ),
     )}
