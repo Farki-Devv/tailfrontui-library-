@@ -4,7 +4,7 @@ import { render, screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { describe, expect, it } from 'vitest';
 import { Badge } from '../components/badge';
-import React from 'react';
+
 describe('Button Component', () => {
   it('renders button with correct text', () => {
     render(<Badge className="">Click Me</Badge>);
